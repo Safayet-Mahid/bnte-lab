@@ -1,11 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
     <title>My Site</title>
-</head>
-<body>
-    <p>Hello World!</p>
-</body>
+  </head>
+  <body class="">
+    <section class="md:mx-52 py-2 bg-white">
+      <div class="flex justify-between">
+        <a class="uppercase text-sky-700 text-sm font-medium" href="http://"
+          >COLUMBIA UNIVERSITY IN THE CITY OF NEW YORK</a
+        >
+        <button class="text-cyan-700 text-lg">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <a
+        class="block text-6xl font-serif py-10 text-cyan-800 font-light"
+        href="http://"
+        >Laboratory For Stem Cells And Tissue Engineering</a
+      >
+      <nav class="space-x-10">
+        <a class="font-thin text-2xl hover:underline" href="http://"
+          >Research</a
+        >
+        <a class="font-thin text-2xl hover:underline" href="http://"
+          >Publications</a
+        >
+        <a class="font-thin text-2xl hover:underline" href="http://">People</a>
+        <a class="font-thin text-2xl hover:underline" href="http://">News</a>
+        <a class="font-thin text-2xl hover:underline" href="http://">Contact</a>
+        <a class="font-thin text-2xl hover:underline" href="http://"
+          >Positions</a
+        >
+      </nav>
+    </section>
+    <main class="space-y-16">
+      <section>
+        <div
+          id="default-carousel"
+          class="relative w-full"
+          data-carousel="slide"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden mx-52 md:h-[500px]">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="images/lab-I.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="images/lab-II.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="images/lab-III.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Slider indicators -->
+          <div
+            class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </section>
+      <!-- Article -->
+      <article class="md:mx-52 grid grid-cols-5 gap-32">
+        <p class="col-span-3 text-lg">
+          The research in our laboratory, directed by Gordana Vunjak-Novakovic,
+          is focused on tissue engineering approaches to improving human health.
+          We develop innovative technologies for engineering functional human
+          tissues and organs – including bone, heart, lung and vasculature – by
+          an integrated use of stem cells, biomaterial scaffolds, and
+          bioreactors. Our long-term goals are to develop personalized
+          treatments for regenerative medicine, tissue models for stem cell
+          research, and “organs-on-a-chip” platforms for studying diseases and
+          testing drug safety and efficacy. <br /><br />
+          Our laboratory is located in the Columbia University Medical Center,
+          on the 12th floor of the Vanderbilt Clinic, and has the state of the
+          art resources for stem cell and tissue engineering research. Our
+          laboratory is a home to the Tissue Engineering Resource Center (TERC)
+          founded to foster tissue engineering for medical impact. We are
+          actively collaborating with numerous investigators at Columbia
+          University, nationwide and around the world.
+        </p>
+        <section class="col-span-2 space-y-10">
+          <a class="underline text-cyan-600 font-serif text-xs" href="http://"
+            >Recent Publication</a
+          >
+          <div class="flex flex-col gap-y-5">
+            <p>
+              Opto-electromechanical quantification of epithelial barrier
+              function in injured and healthy airway tissues
+            </p>
+            <button class="border-2 border-cyan-700 rounded px-3 py-1 w-fit">
+              <a
+                class="underline text-cyan-600 text-xs uppercase"
+                href="http://"
+                >PDF Download</a
+              >
+            </button>
+            <a class="underline text-cyan-600 font-medium" href="http://"
+              >Full List of Publications</a
+            >
+          </div>
+          <div class="border border-gray-300 rounded-xl h-96">
+            <button
+              class="w-full border-b border-gray-300 p-3 font-bold text-start text-xl text-gray-700"
+            >
+              <a href="http://">Tweets for @GVNlab</a>
+            </button>
+            <p></p>
+          </div>
+        </section>
+      </article>
+      <!-- Youtube Video -->
+      <section class="lg:mx-52">
+        <iframe
+          width="1103"
+          height="550"
+          src="https://www.youtube.com/embed/t8x3wdXZGEY?si=3J8rCLIw768UP2_U"
+        >
+        </iframe>
+      </section>
+      <!-- Icon Section -->
+      <section class="lg:mx-52 flex justify-center gap-x-5">
+        <div class="w-96 flex flex-col items-center justify-center text-center">
+          <p class="text-[4.75rem] text-neutral-500">
+            <i class="fa-solid fa-binoculars"></i>
+          </p>
+          <p class="text-lg text-neutral-500 font-medium">Checkout...</p>
+          <p>
+            our Tissue Engineering Resource Center site
+            <a class="underline font-medium text-cyan-600" href="http://"
+              >nextgenterc.com!</a
+            >
+          </p>
+        </div>
+        <div class="w-96 flex flex-col items-center justify-center text-center">
+          <p class="text-[4rem] text-neutral-500">
+            <i class="fa-regular fa-pen-to-square"></i>
+          </p>
+          <p class="text-lg text-neutral-500 font-medium">Register...</p>
+          <p>
+            for weekly
+            <a class="underline font-medium text-cyan-600" href="http://"
+              >Tissue Talks</a
+            >
+            seminar series on Zoom!
+          </p>
+        </div>
+      </section>
+      <!-- Affliations -->
+      <section class="lg:mx-52 grid grid-cols-5 gap-y-5">
+        <p
+          class="row-span-4 border-r border-gray-500 flex flex-col justify-center text-end px-5 text-4xl text-neutral-500 font-serif"
+        >
+          Columbia Affiliations
+        </p>
+        <a
+          class="text-cyan-700 text-[1.30rem] col-span-2 underline font-light font-serif px-5"
+          href="http://"
+          >Tissue Engineering Resource Center (TERC)</a
+        >
+        <a
+          class="text-cyan-700 text-[1.30rem] col-span-2 underline font-light font-serif px-5"
+          href="http://"
+          >Columbia Engineering</a
+        >
+        <a
+          class="text-cyan-700 text-[1.30rem] col-span-2 underline font-light font-serif px-5"
+          href="http://"
+          >Department of Biomedical Engineering</a
+        >
+        <a
+          class="text-cyan-700 text-[1.30rem] col-span-2 underline font-light font-serif px-5"
+          href="http://"
+          >Department of Medicine</a
+        >
+        <a
+          class="text-cyan-700 text-[1.30rem] col-span-2 underline font-light font-serif px-5"
+          href="http://"
+          >Center for Dental and Craniofacial Research</a
+        >
+        <a
+          class="text-cyan-700 text-[1.30rem] col-span-2 underline font-light font-serif px-5"
+          href="http://"
+          >College of Dental Medicine</a
+        >
+        <a
+          class="text-cyan-700 text-[1.30rem] col-span-2 underline font-light font-serif px-5"
+          href="http://"
+          >Columbia Stem Cell Initiative</a
+        >
+        <div></div>
+      </section>
+      <!-- Footer -->
+      <footer>
+        <section
+          class="lg:px-52 bg-neutral-100 text-stone-600 py-10 grid grid-cols-5 gap-x-14"
+        >
+          <div class="flex items-start gap-x-2 col-span-2">
+            <p class="text-2xl"><i class="fa-solid fa-location-dot"></i></p>
+            <a class="" href=""
+              >Main Office and Lab
+              <span class="text-xs block"
+                >622 West 168th Street, Vanderbilt Clinic, Room 12-234 MC 104B ·
+                New York, NY 10032</span
+              ></a
+            >
+          </div>
+          <div class="flex items-start gap-x-2">
+            <p class="text-2xl"><i class="fa-solid fa-envelope"></i></p>
+            <a class="" href=""
+              >Contact Us
+              <span class="underline text-cyan-600 font-medium text-sm block"
+                >gvnlab@gmail.com</span
+              ></a
+            >
+          </div>
+          <div class="space-x-2">
+            <p>Follow Us</p>
+            <p class="text-2xl text-sky-600">
+              <i class="fa-brands fa-twitter"></i>
+            </p>
+          </div>
+          <div class="flex flex-col gap-y-1">
+            <a class="underline text-sky-700 font-medium" href="http://"
+              >Research</a
+            >
+            <a class="underline text-sky-700 font-medium" href="http://"
+              >Publications</a
+            >
+            <a class="underline text-sky-700 font-medium" href="http://"
+              >People</a
+            >
+            <a class="underline text-sky-700 font-medium" href="http://"
+              >News</a
+            >
+            <a class="underline text-sky-700 font-medium" href="http://"
+              >Contact</a
+            >
+            <a class="underline text-sky-700 font-medium" href="http://"
+              >Positions</a
+            >
+          </div>
+        </section>
+        <section class="lg:px-52 bg-sky-800 py-10 flex justify-between">
+          <div class="flex items-start gap-x-2">
+            <p class="text-white text-2xl"><i class="fa-solid fa-crown"></i></p>
+            <a class="text-white text-2xl font-serif" href=""
+              >Columbia University
+              <span class="text-sm block">In the city of New York</span></a
+            >
+          </div>
+          <div class="space-x-3">
+            <a class="underline text-white text-sm" href="http://"
+              >©2023 Columbia University</a
+            >
+            <a class="underline text-white text-sm" href="http://"
+              >Accessibility</a
+            >
+            <a class="underline text-white text-sm" href="http://"
+              >Nondiscrimination</a
+            >
+            <a class="underline text-white text-sm" href="http://">Careers</a>
+            <a class="underline text-white text-sm" href="http://"
+              >Built using Columbia Sites</a
+            >
+          </div>
+        </section>
+      </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  </body>
 </html>
