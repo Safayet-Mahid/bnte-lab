@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/components.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <title>My Site</title>
+  </head>
+  <body class="">
+    <!-- Responsive Header -->
+    <header
+      class="lg:hidden block p-5 flex justify-between items-center bg-sky-900 text-white"
+    >
+      <button
+        class="text-white text-lg bg-white-700 hover:bg-white-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg text-sm dark:bg-white-600 dark:hover:bg-white-700 focus:outline-none dark:focus:ring-white-800"
+        type="button"
+        data-drawer-target="drawer-navigation"
+        data-drawer-show="drawer-navigation"
+        aria-controls="drawer-navigation"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a
+        class="uppercase lg:text-sm text-[0.85rem] font-medium font-serif"
+        href="http://"
+        >COLUMBIA UNIVERSITY</a
+      >
+      <button class="">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+      <!-- drawer component -->
+      <div
+        id="drawer-navigation"
+        class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-sky-950 w-64 dark:bg-gray-800"
+        tabindex="-1"
+        aria-labelledby="drawer-navigation-label"
+      >
+        <button
+          type="button"
+          data-drawer-hide="drawer-navigation"
+          aria-controls="drawer-navigation"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
+        >
+          <svg
+            class="w-3 h-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+            />
+          </svg>
+        </button>
+        <div class="py-4 overflow-y-auto">
+          <ul class="space-y-2 font-medium">
+            <!-- <li>
+              <button
+                type="button"
+                class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                aria-controls="dropdown-example"
+                data-collapse-toggle="dropdown-example"
+              >
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 18 21"
+                >
+                  <path
+                    d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"
+                  />
+                </svg>
+                <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                  >E-commerce</span
+                >
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    >Products</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    >Billing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    >Invoice</a
+                  >
+                </li>
+              </ul>
+            </li> -->
+
+            <li>
+              <a
+                href="pages/research.html"
+                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <span class="flex-1 ml-3 whitespace-nowrap">Research</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="pages/publications.html"
+                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <span class="flex-1 ml-3 whitespace-nowrap">Publications</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="pages/people.html"
+                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <span class="flex-1 ml-3 whitespace-nowrap">People</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="pages/news.html"
+                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <span class="flex-1 ml-3 whitespace-nowrap">News</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="pages/contact.html"
+                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <span class="ml-3">Contact</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="pages/positions.html"
+                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <span class="ml-3">Positions</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <header class="lg:mx-52 mx-5 py-2 bg-white">
+      <div class="hidden lg:flex justify-between">
+        <a
+          class="uppercase text-sky-700 lg:text-sm text-[0.65rem] font-medium"
+          href="http://"
+          >COLUMBIA UNIVERSITY IN THE CITY OF NEW YORK</a
+        >
+        <button class="text-cyan-700 text-lg">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <a
+        class="block lg:text-6xl text-2xl font-serif lg:py-10 py-5 text-cyan-800 font-light"
+        href="/"
+        >Laboratory For Stem Cells And Tissue Engineering</a
+      >
+      <nav class="hidden lg:block space-x-10">
+        <a class="font-thin text-2xl hover:underline" href="pages/research.html"
+          >Research</a
+        >
+        <a
+          class="font-thin text-2xl hover:underline"
+          href="pages/publications.html"
+          >Publications</a
+        >
+        <a class="font-thin text-2xl hover:underline" href="pages/people.html"
+          >People</a
+        >
+        <a class="font-thin text-2xl hover:underline" href="pages/news.html"
+          >News</a
+        >
+        <a class="font-thin text-2xl hover:underline" href="pages/contact.html"
+          >Contact</a
+        >
+        <a
+          class="font-thin text-2xl hover:underline"
+          href="pages/positions.html"
+          >Positions</a
+        >
+      </nav>
+    </header>
+    <main
+      class="md:mx-52 mx-10 grid lg:grid-cols-5 grid-cols-1 lg:gap-x-24 gap-x-10"
+    >
+      <h1
+        class="lg:col-span-5 font-serif lg:text-6xl text-2xl lg:py-16 text-slate-700"
+      >
+        Research
+      </h1>
+      <!-- Research -->
+      <section class="lg:col-span-3 space-y-5 lg:mb-16">
+        <article class="lg:text-xl">
+          Both in vivo (during development, regeneration, and disease) and in
+          vitro (in engineered tissues), cells interact with the entire context
+          of their environment – the regulatory molecules, other cells,
+          extracellular matrix and physical factors, with synergistic and
+          competing effects. Our laboratory is interested in investigating these
+          interactions at different length and time scales, and utilizing them
+          to engineer functional tissues. To establish controllable and
+          physiologically meaningful conditions, we are developing engineering
+          tools that enable human cells (the “tissue engineers”) to assemble
+          into functional tissues: specialized scaffolds (serving as templates
+          for tissue formation) and bioreactors (providing environmental
+          control, regulatory signals, and on-line insights into cellular/tissue
+          outcomes). We utilize this approach to bioengineer a number of human
+          tissues and organs, for two different applications: (i) regenerative
+          medicine, to repair a tissue/organ lost to injury or disease, and (ii)
+          “organs on a chip” platforms, to study human physiology in health and
+          disease. The engineering designs are driven by the clinical need (to
+          facilitate translation) and are based on biological principles (to
+          provide a realistic biological context for experimental studies). Our
+          diverse research team is collaborating with investigators from many
+          different disciplines, at Columbia, nationally and internationally.
+          Our laboratory is located in the Columbia University Irving Medical
+          Center, and is a state-of-the-art facility for basic and translational
+          studies of cell and tissue engineering. We also host the NIH Tissue
+          Engineering Resource Center and the Center for Dental and Craniofacial
+          Research.
+        </article>
+        <img
+          src="https://gvnlab.bme.columbia.edu/sites/default/files/styles/cu_crop/public/content/pics/Overview.png?itok=MpmAMNPB"
+          alt=""
+        />
+        <div class="flex justify-between">
+          <h2 class="lg:text-3xl">Research Projects</h2>
+          <div class="flex justify-center">
+            <button class="px-2 py-1 border">Expand all</button>
+            <button class="px-2 py-1 border">Collasp all</button>
+          </div>
+        </div>
+
+        <section>
+          <div
+            id="accordion-color"
+            data-accordion="collapse"
+            data-active-classes="text-sky-700 underline decoration-sky-700 dark:text-white"
+          >
+            <h2 id="accordion-color-heading-1">
+              <button
+                type="button"
+                class="flex items-center justify-start gap-x-5 w-full py-3.5 px-2 font-medium text-left text-gray-500 border-b border-gray-200 rounded-t-xl hover:text-sky-700 hover:underline hover:decoration-sky-700"
+                data-accordion-target="#accordion-color-body-1"
+                aria-expanded="false"
+                aria-controls="accordion-color-body-1"
+              >
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-3 rotate-90 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+                <span class="font-thin lg:text-xl">What is Flowbite?</span>
+              </button>
+            </h2>
+            <div
+              id="accordion-color-body-1"
+              class="hidden"
+              aria-labelledby="accordion-color-heading-1"
+            >
+              <div
+                class="p-5 border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+              >
+                <p class="mb-2 text-gray-500 dark:text-gray-400">
+                  Flowbite is an open-source library of interactive components
+                  built on top of Tailwind CSS including buttons, dropdowns,
+                  modals, navbars, and more.
+                </p>
+                <p class="text-gray-500 dark:text-gray-400">
+                  Check out this guide to learn how to
+                  <a
+                    href="/docs/getting-started/introduction/"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >get started</a
+                  >
+                  and start developing websites even faster with components on
+                  top of Tailwind CSS.
+                </p>
+              </div>
+            </div>
+            <h2 id="accordion-color-heading-2">
+              <button
+                type="button"
+                class="flex items-center justify-start gap-x-5 w-full py-3.5 px-2 font-medium text-left text-gray-500 border-b border-gray-200 hover:text-sky-700 hover:underline hover:decoration-sky-700"
+                data-accordion-target="#accordion-color-body-2"
+                aria-expanded="false"
+                aria-controls="accordion-color-body-2"
+              >
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-3 rotate-90 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+                <span class="font-thin lg:text-xl">Is there a Figma file available?</span>
+              </button>
+            </h2>
+            <div
+              id="accordion-color-body-2"
+              class="hidden"
+              aria-labelledby="accordion-color-heading-2"
+            >
+              <div class="p-5 border-b border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">
+                  Flowbite is first conceptualized and designed using the Figma
+                  software so everything you see in the library has a design
+                  equivalent in our Figma file.
+                </p>
+                <p class="text-gray-500 dark:text-gray-400">
+                  Check out the
+                  <a
+                    href="https://flowbite.com/figma/"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >Figma design system</a
+                  >
+                  based on the utility classes from Tailwind CSS and components
+                  from Flowbite.
+                </p>
+              </div>
+            </div>
+            <h2 id="accordion-color-heading-3">
+                <button
+                type="button"
+                class="flex items-center justify-start gap-x-5 w-full py-3.5 px-2 font-medium text-left text-gray-500 border-b border-gray-200 hover:text-sky-700 hover:underline hover:decoration-sky-700"
+                data-accordion-target="#accordion-color-body-3"
+                aria-expanded="false"
+                aria-controls="accordion-color-body-3"
+              >
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-3 rotate-90 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+                <span class="font-thin lg:text-xl"
+                  >What are the differences between Flowbite and Tailwind
+                  UI?</span
+                >
+              </button>
+            </h2>
+            <div
+              id="accordion-color-body-3"
+              class="hidden"
+              aria-labelledby="accordion-color-heading-3"
+            >
+              <div
+                class="p-5 border border-t-0 border-gray-200 dark:border-gray-700"
+              >
+                <p class="mb-2 text-gray-500 dark:text-gray-400">
+                  The main difference is that the core components from Flowbite
+                  are open source under the MIT license, whereas Tailwind UI is
+                  a paid product. Another difference is that Flowbite relies on
+                  smaller and standalone components, whereas Tailwind UI offers
+                  sections of pages.
+                </p>
+                <p class="mb-2 text-gray-500 dark:text-gray-400">
+                  However, we actually recommend using both Flowbite, Flowbite
+                  Pro, and even Tailwind UI as there is no technical reason
+                  stopping you from using the best of two worlds.
+                </p>
+                <p class="mb-2 text-gray-500 dark:text-gray-400">
+                  Learn more about these technologies:
+                </p>
+                <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                  <li>
+                    <a
+                      href="https://flowbite.com/pro/"
+                      class="text-blue-600 dark:text-blue-500 hover:underline"
+                      >Flowbite Pro</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://tailwindui.com/"
+                      rel="nofollow"
+                      class="text-blue-600 dark:text-blue-500 hover:underline"
+                      >Tailwind UI</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Contacts -->
+      <section class="lg:col-span-2 lg:space-y-8">
+        <div class="">
+          <p class="lg:text-4xl pb-5">Contact Us</p>
+          <p class="flex justify-start items-center gap-2 text-stone-600">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <a
+              class="underline text-cyan-700 text-sm lg:text-[0.85rem] font-medium"
+              href="http://"
+              >212-305-5755</a
+            >
+          </p>
+          <p class="flex justify-start items-center gap-2 text-stone-600">
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <a
+              class="underline text-cyan-700 text-sm lg:text-[0.85rem] font-medium"
+              href="http://"
+              >gvnlab@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="">
+          <p class="lg:text-4xl pb-5">Inquiries</p>
+          <p class="text-stone-600">
+            <span class="font-medium">Sue Halligan</span><br />
+            Director of Research Operations <br />
+            Tel: 212-305-5755
+          </p>
+          <p class="flex justify-start items-center gap-2 text-stone-600">
+            <span>Email:</span>
+            <a
+              class="underline text-cyan-700 text-sm lg:text-[0.85rem] font-medium"
+              href="http://"
+              >sph2130@columbia.edu
+            </a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <section
+        class="lg:px-52 px-10 bg-neutral-100 text-stone-600 py-10 grid lg:grid-cols-5 grid-cols-1 lg:gap-14 gap-5"
+      >
+        <div
+          class="flex flex-col lg:flex-row lg:items-start gap-2 lg:col-span-2"
+        >
+          <p class="text-2xl"><i class="fa-solid fa-location-dot"></i></p>
+          <a class="" href=""
+            >Main Office and Lab
+            <span class="text-xs block"
+              >622 West 168th Street, Vanderbilt Clinic, Room 12-234 MC 104B ·
+              New York, NY 10032</span
+            ></a
+          >
+        </div>
+        <div class="flex flex-col lg:flex-row lg:items-start gap-2">
+          <p class="text-2xl"><i class="fa-solid fa-envelope"></i></p>
+          <a class="" href=""
+            >Contact Us
+            <span
+              class="underline text-cyan-600 font-medium lg:text-sm text-[0.65rem] block"
+              >gvnlab@gmail.com</span
+            ></a
+          >
+        </div>
+        <div class="space-x-2">
+          <p>Follow Us</p>
+          <p class="text-2xl text-sky-600">
+            <i class="fa-brands fa-twitter"></i>
+          </p>
+        </div>
+        <div class="flex flex-col gap-y-1 lg:text-base text-xs">
+          <a
+            class="underline text-sky-700 font-medium"
+            href="pages/research.html"
+            >Research</a
+          >
+          <a
+            class="underline text-sky-700 font-medium"
+            href="pages/publications.html"
+            >Publications</a
+          >
+          <a class="underline text-sky-700 font-medium" href="pages/people.html"
+            >People</a
+          >
+          <a class="underline text-sky-700 font-medium" href="pages/news.html"
+            >News</a
+          >
+          <a
+            class="underline text-sky-700 font-medium"
+            href="pages/contact.html"
+            >Contact</a
+          >
+          <a
+            class="underline text-sky-700 font-medium"
+            href="pages/positions.html"
+            >Positions</a
+          >
+        </div>
+      </section>
+      <section
+        class="lg:px-52 px-10 bg-sky-800 py-10 flex flex-col lg:flex-row justify-center items-center lg:justify-between"
+      >
+        <div class="flex items-start gap-x-2">
+          <p class="text-white lg:text-2xl">
+            <i class="fa-solid fa-crown"></i>
+          </p>
+          <a class="text-white lg:text-2xl font-serif" href=""
+            >Columbia University
+            <span class="lg:lg:text-sm text-[0.65rem] text-[0.65rem] block"
+              >In the city of New York</span
+            ></a
+          >
+        </div>
+        <div class="space-x-3 flex flex-wrap">
+          <a
+            class="underline text-white lg:text-sm text-[0.65rem]"
+            href="http://"
+            >©2023 Columbia University</a
+          >
+          <a
+            class="underline text-white lg:text-sm text-[0.65rem]"
+            href="http://"
+            >Accessibility</a
+          >
+          <a
+            class="underline text-white lg:text-sm text-[0.65rem]"
+            href="http://"
+            >Nondiscrimination</a
+          >
+          <a
+            class="underline text-white lg:text-sm text-[0.65rem]"
+            href="http://"
+            >Careers</a
+          >
+          <a
+            class="underline text-white lg:text-sm text-[0.65rem]"
+            href="http://"
+            >Built using Columbia Sites</a
+          >
+        </div>
+      </section>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  </body>
+</html>

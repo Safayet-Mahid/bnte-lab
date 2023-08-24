@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/components.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -71,14 +72,6 @@
         </button>
         <div class="py-4 overflow-y-auto">
           <ul class="space-y-2 font-medium">
-            <li>
-              <a
-                href="#"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="ml-3">Dashboard</span>
-              </a>
-            </li>
             <!-- <li>
               <button
                 type="button"
@@ -143,34 +136,50 @@
 
             <li>
               <a
-                href="#"
+                href="pages/research.html"
                 class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
-                <span class="flex-1 ml-3 whitespace-nowrap">Users</span>
+                <span class="flex-1 ml-3 whitespace-nowrap">Research</span>
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="pages/publications.html"
                 class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
-                <span class="flex-1 ml-3 whitespace-nowrap">Products</span>
+                <span class="flex-1 ml-3 whitespace-nowrap">Publications</span>
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="pages/people.html"
                 class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
-                <span class="flex-1 ml-3 whitespace-nowrap">Sign In</span>
+                <span class="flex-1 ml-3 whitespace-nowrap">People</span>
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="pages/news.html"
                 class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
-                <span class="flex-1 ml-3 whitespace-nowrap">Sign Up</span>
+                <span class="flex-1 ml-3 whitespace-nowrap">News</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="pages/contact.html"
+                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <span class="ml-3">Contact</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="pages/positions.html"
+                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <span class="ml-3">Positions</span>
               </a>
             </li>
           </ul>
@@ -190,20 +199,30 @@
       </div>
       <a
         class="block lg:text-6xl text-2xl font-serif lg:py-10 py-5 text-cyan-800 font-light"
-        href="http://"
+        href="/"
         >Laboratory For Stem Cells And Tissue Engineering</a
       >
       <nav class="hidden lg:block space-x-10">
-        <a class="font-thin text-2xl hover:underline" href="http://"
+        <a class="font-thin text-2xl hover:underline" href="pages/research.html"
           >Research</a
         >
-        <a class="font-thin text-2xl hover:underline" href="http://"
+        <a
+          class="font-thin text-2xl hover:underline"
+          href="pages/publications.html"
           >Publications</a
         >
-        <a class="font-thin text-2xl hover:underline" href="http://">People</a>
-        <a class="font-thin text-2xl hover:underline" href="http://">News</a>
-        <a class="font-thin text-2xl hover:underline" href="http://">Contact</a>
-        <a class="font-thin text-2xl hover:underline" href="http://"
+        <a class="font-thin text-2xl hover:underline" href="pages/people.html"
+          >People</a
+        >
+        <a class="font-thin text-2xl hover:underline" href="pages/news.html"
+          >News</a
+        >
+        <a class="font-thin text-2xl hover:underline" href="pages/contact.html"
+          >Contact</a
+        >
+        <a
+          class="font-thin text-2xl hover:underline"
+          href="pages/positions.html"
           >Positions</a
         >
       </nav>
@@ -440,7 +459,7 @@
       <!-- Affliations -->
       <section class="lg:mx-52 grid lg:grid-cols-5 grid-cols-1 gap-y-5">
         <p
-          class="lg:row-span-4 lg:border-r border-b border-gray-500 flex flex-col justify-center lg:text-end text-start p-5 text-2xl lg:text-4xl text-neutral-500 font-serif"
+          class="lg:row-span-4 lg:border-r border-b lg:border-b-0 border-gray-500 flex flex-col justify-center lg:text-end text-start p-5 text-2xl lg:text-4xl text-neutral-500 font-serif"
         >
           Columbia Affiliations
         </p>
@@ -515,22 +534,24 @@
             </p>
           </div>
           <div class="flex flex-col gap-y-1 lg:text-base text-xs">
-            <a class="underline text-sky-700 font-medium" href="http://"
+            <a class="underline text-sky-700 font-medium" href="pages/research.html"
               >Research</a
             >
-            <a class="underline text-sky-700 font-medium" href="http://"
+            <a
+              class="underline text-sky-700 font-medium"
+              href="pages/publications.html"
               >Publications</a
             >
-            <a class="underline text-sky-700 font-medium" href="http://"
+            <a class="underline text-sky-700 font-medium" href="pages/people.html"
               >People</a
             >
-            <a class="underline text-sky-700 font-medium" href="http://"
+            <a class="underline text-sky-700 font-medium" href="pages/news.html"
               >News</a
             >
-            <a class="underline text-sky-700 font-medium" href="http://"
+            <a class="underline text-sky-700 font-medium" href="pages/contact.html"
               >Contact</a
             >
-            <a class="underline text-sky-700 font-medium" href="http://"
+            <a class="underline text-sky-700 font-medium" href="pages/positions.html"
               >Positions</a
             >
           </div>
