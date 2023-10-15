@@ -1,127 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="js/components.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
-      rel="stylesheet"
-    />
-    <title>BNTE lab</title>
-  </head>
-  <body class="">
-    <!-- Responsive Header -->
-    <header
-      class="lg:hidden block p-5 flex justify-between items-center bg-yellow-900 text-white"
-    >
-      <button
-        class="text-white text-lg bg-white-700 hover:bg-white-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg text-sm dark:bg-white-600 dark:hover:bg-white-700 focus:outline-none dark:focus:ring-white-800"
-        type="button"
-        data-drawer-target="drawer-navigation"
-        data-drawer-show="drawer-navigation"
-        aria-controls="drawer-navigation"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <a
-        class="uppercase lg:text-sm text-[0.85rem] font-medium font-serif"
-        href="http://"
-        >UNIVERSITY of CHITTAGONG</a
-      >
-      <button class="">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
 
-      <!-- drawer component -->
-      <div
-        id="drawer-navigation"
-        class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-sky-950 w-64 dark:bg-gray-800"
-        tabindex="-1"
-        aria-labelledby="drawer-navigation-label"
-      >
-        <button
-          type="button"
-          data-drawer-hide="drawer-navigation"
-          aria-controls="drawer-navigation"
-          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
-        >
-          <svg
-            class="w-3 h-3"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-            />
-          </svg>
-        </button>
-        <div class="py-4 overflow-y-auto">
-          <ul class="space-y-2 font-medium">
-          
-            <li>
-              <a
-              href="../index.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">Home</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="pages/research.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">Research</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="pages/publications.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">Publications</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="pages/people.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">People</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="pages/news.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">News</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="pages/contact.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="ml-3">Contact</span>
-              </a>
-            </li>
-            <!-- <li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="js/components.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <title>BNTE lab</title>
+</head>
+
+<body class="">
+  <!-- Responsive Header -->
+  <header class="lg:hidden block p-5 flex justify-between items-center bg-yellow-900 text-white">
+    <button
+      class="text-white text-lg bg-white-700 hover:bg-white-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg text-sm dark:bg-white-600 dark:hover:bg-white-700 focus:outline-none dark:focus:ring-white-800"
+      type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
+      aria-controls="drawer-navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <a class="uppercase lg:text-sm text-[0.85rem] font-medium font-serif" href="http://">
+      <img src="./images/culogo.png" alt="">
+      <span>UNIVERSITY of CHITTAGONG</span>
+    </a>
+    <button class="">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+    <!-- drawer component -->
+    <div id="drawer-navigation"
+      class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-sky-950 w-64 dark:bg-gray-800"
+      tabindex="-1" aria-labelledby="drawer-navigation-label">
+      <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+        </svg>
+      </button>
+      <div class="py-4 overflow-y-auto">
+        <ul class="space-y-2 font-medium">
+
+          <li>
+            <a href="../index.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="pages/research.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">Research</span>
+            </a>
+          </li>
+          <li>
+            <a href="pages/publications.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">Publications</span>
+            </a>
+          </li>
+          <li>
+            <a href="pages/people.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">People</span>
+            </a>
+          </li>
+          <li>
+            <a href="pages/news.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">News</span>
+            </a>
+          </li>
+          <li>
+            <a href="pages/contact.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="ml-3">Contact</span>
+            </a>
+          </li>
+          <!-- <li>
               <a
                 href="pages/positions.html"
                 class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
@@ -129,404 +88,253 @@
                 <span class="ml-3">Positions</span>
               </a>
             </li> -->
-          </ul>
-        </div>
+        </ul>
       </div>
-    </header>
-    <header class="lg:mx-52 mx-5 py-2 bg-white">
-      <div class="hidden lg:flex justify-between">
-        <a
-          class="uppercase text-yellow-600 lg:text-sm text-[0.65rem] font-medium"
-          href="http://"
-          >University of Chittagong</a
-        >
-        <button class="text-yellow-700 text-lg">
+    </div>
+  </header>
+  <header class="lg:mx-52 mx-5 py-2 bg-white">
+    <div class="hidden lg:flex justify-between">
+      <a class="uppercase text-yellow-600 lg:text-sm text-[0.65rem] font-medium flex gap-x-2 h-5"
+        href="https://cu.ac.bd/">
+        <img src="./images/cu-logo-black.svg" alt="">
+        <span>University of Chittagong</span></a>
+      <div class="flex items-center gap-x-2">
+        <a href="https://acce.cu.ac.bd/" class="uppercase text-yellow-600 lg:text-sm text-[0.65rem] font-medium flex gap-x-2 h-5">ACCE</a>
+        <button class="text-gray-600 ">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
-      <div class="flex my-5 rounded-2xl ">
-        <img src="./images/bnte-logo.jpeg" class="w-24 h-24  " alt="">
-        
-        <a
-        class="block lg:text-4xl text-2xl font-serif  text-white bg-red-500 font-light px-4 py-2"
-        href="/"
-        >Bio-Nanomaterials and Tissue Engineering Laboratory (BNTELab)</a>
-      </div>
-      <nav class="hidden lg:block space-x-10">
-        <a class="font-thin text-2xl hover:underline" href="../index.html"
-          >Home</a
-        >
-        <a class="font-thin text-2xl hover:underline" href="pages/research.html"
-          >Research</a
-        >
-        <a
-          class="font-thin text-2xl hover:underline"
-          href="pages/publications.html"
-          >Publications</a
-        >
-        <a class="font-thin text-2xl hover:underline" href="pages/people.html"
-          >People</a
-        >
-        <a class="font-thin text-2xl hover:underline" href="pages/news.html"
-          >News</a
-        >
-        <a class="font-thin text-2xl hover:underline" href="pages/contact.html"
-          >Contact</a
-        >
-        <!-- <a
+    </div>
+    <div class="flex my-5 rounded-2xl ">
+      <img src="./images/bnte-logo.jpeg" class="w-24 h-24  " alt="">
+
+      <a class="block lg:text-4xl text-2xl font-serif  text-white bg-red-500 font-light px-4 py-2"
+        href="/">Bio-Nanomaterials and Tissue Engineering Laboratory (BNTELab)</a>
+    </div>
+    <nav class="hidden lg:block space-x-10">
+      <a class="font-thin text-2xl hover:underline" href="../index.html">Home</a>
+      <a class="font-thin text-2xl hover:underline" href="pages/research.html">Research</a>
+      <a class="font-thin text-2xl hover:underline" href="pages/publications.html">Publications</a>
+      <a class="font-thin text-2xl hover:underline" href="pages/people.html">People</a>
+      <a class="font-thin text-2xl hover:underline" href="pages/news.html">News</a>
+      <a class="font-thin text-2xl hover:underline" href="pages/contact.html">Contact</a>
+      <!-- <a
           class="font-thin text-2xl hover:underline"
           href="pages/positions.html"
           >Positions</a
         > -->
-      </nav>
-    </header>
-    <main class="space-y-6 lg:space-y-16">
-      <section class="mx-5 lg:mx-52">
-        <div
-          id="default-carousel"
-          class="relative w-full"
-          data-carousel="slide"
-        >
-          <!-- Carousel wrapper -->
-          <div class="relative h-56 overflow-hidden lg:h-[500px]">
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="images/lab-01.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="images/lab-02.png"
-                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
-                alt="..."
-              />
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="images/lab-03.png"
-                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="images/lab-04.png"
-                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="images/lab-05.jpeg"
-                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="images/lab-06.png"
-                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
+    </nav>
+  </header>
+  <main class="space-y-6 lg:space-y-16">
+    <section class="mx-5 lg:mx-52">
+      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden lg:h-[500px]">
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="images/lab-01.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
           </div>
-          <!-- Slider indicators -->
-          <div
-            class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
-          >
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="true"
-              aria-label="Slide 1"
-              data-carousel-slide-to="0"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 2"
-              data-carousel-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 3"
-              data-carousel-slide-to="2"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 4"
-              data-carousel-slide-to="3"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 5"
-              data-carousel-slide-to="4"
-            ></button>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="images/lab-02.png"
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="..." />
           </div>
-          <!-- Slider controls -->
-          <button
-            type="button"
-            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-prev
-          >
-            <span
-              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-            >
-              <svg
-                class="w-4 h-4 text-white dark:text-gray-800"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 1 1 5l4 4"
-                />
-              </svg>
-              <span class="sr-only">Previous</span>
-            </span>
-          </button>
-          <button
-            type="button"
-            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-next
-          >
-            <span
-              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-            >
-              <svg
-                class="w-4 h-4 text-white dark:text-gray-800"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m1 9 4-4-4-4"
-                />
-              </svg>
-              <span class="sr-only">Next</span>
-            </span>
-          </button>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="images/lab-03.png"
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="images/lab-04.png"
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="images/lab-05.jpeg"
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="images/lab-06.png"
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+          </div>
         </div>
-      </section>
-      <!-- Article -->
-      <article
-        class="md:mx-52 mx-10 grid lg:grid-cols-5 grid-cols-1 lg:gap-32 gap-10"
-      >
-        <p class="lg:col-span-3 lg:text-lg">
-          BNTELab, led by  <a href="https://scholar.google.com/citations?user=ifAdIwEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="underline text-yellow-600">Dr. Kamol Dey</a> , designs and develops robust hydrogels for a wide range of applications, including tissue engineering and regenerative medicine, biosensors, soft electronics, and environmental remediation. We love to play with crosslinking chemistry to formulate multifunctional hydrogels for engineering functional human tissues and organs – including bone, cartilage, nerve, and heart – by an integrated use of stem cells and signaling molecules. Also, our laboratory concentrates on the synthesis of nanostructured biomaterials with biochemical, mechanical, and electrical properties suitable for mimicking tissue-specific microenvironment. <br> <br> In addition, BNTELab works on environmental remediation using sustainable nanomaterials and technologies. The long-term goal of BNTELab is to promote tissue engineering for medical impact and to harness nanotechnology to create a more prosperous society. Our team is actively collaborating with investigators at <a target="_blank" href="https://cu.ac.bd/" class="underline text-yellow-600">Chittagong University</a> as well as across the nation and around the globe.
-        </p>
-        <section class="lg:col-span-2 lg:space-y-10 space-y-5">
-          <p class="underline text-yellow-600 font-serif text-xs" 
-            >Recent Publication</p
-          >
-          <div class="flex flex-col gap-y-5">
-            <a target="_blank" href="https://www.mdpi.com/2313-7673/8/6/473?fbclid=IwAR2o_FguYAzp9QvK7k3hhxqCVN95wPwmd9akoJq0WHtRgxIz-eqb-I31EUg" class=" text-sm  hover:text-yellow-600 hover:underline">
-              Designing Biomimetic Conductive Gelatin-Chitosan–Carbon Black Nanocomposite Hydrogels for Tissue Engineering
-            </a>
-            <!-- <button class="border-2 border-yellow-700 rounded px-3 py-1 w-fit">
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+            data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+            data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+            data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+            data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+            data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 1 1 5l4 4" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button"
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 9 4-4-4-4" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </section>
+    <!-- Article -->
+    <article class="md:mx-52 mx-10 grid lg:grid-cols-5 grid-cols-1 lg:gap-32 gap-10">
+      <p class="lg:col-span-3 lg:text-lg">
+        BNTELab, led by <a href="https://scholar.google.com/citations?user=ifAdIwEAAAAJ&hl=en" target="_blank"
+          rel="noopener noreferrer" class="underline text-yellow-600">Dr. Kamol Dey</a> , designs and develops robust
+        hydrogels for a wide range of applications, including tissue engineering and regenerative medicine, biosensors,
+        soft electronics, and environmental remediation. We love to play with crosslinking chemistry to formulate
+        multifunctional hydrogels for engineering functional human tissues and organs – including bone, cartilage,
+        nerve, and heart – by an integrated use of stem cells and signaling molecules. Also, our laboratory concentrates
+        on the synthesis of nanostructured biomaterials with biochemical, mechanical, and electrical properties suitable
+        for mimicking tissue-specific microenvironment. <br> <br> In addition, BNTELab works on environmental
+        remediation using sustainable nanomaterials and technologies. The long-term goal of BNTELab is to promote tissue
+        engineering for medical impact and to harness nanotechnology to create a more prosperous society. Our team is
+        actively collaborating with investigators at <a target="_blank" href="https://cu.ac.bd/"
+          class="underline text-yellow-600">Chittagong University</a> as well as across the nation and around the globe.
+      </p>
+      <section class="lg:col-span-2 lg:space-y-10 space-y-5">
+        <p class="underline text-yellow-600 font-serif text-xs">Recent Publication</p>
+        <div class="flex flex-col gap-y-5">
+          <a target="_blank"
+            href="https://www.mdpi.com/2313-7673/8/6/473?fbclid=IwAR2o_FguYAzp9QvK7k3hhxqCVN95wPwmd9akoJq0WHtRgxIz-eqb-I31EUg"
+            class=" text-sm  hover:text-yellow-600 hover:underline">
+            Designing Biomimetic Conductive Gelatin-Chitosan–Carbon Black Nanocomposite Hydrogels for Tissue Engineering
+          </a>
+          <!-- <button class="border-2 border-yellow-700 rounded px-3 py-1 w-fit">
               <a
                 class="underline text-yellow-600 text-xs uppercase"
                 href="http://"
                 >PDF Download</a
               >
             </button> -->
-            <a class="underline text-yellow-600 font-medium" href="http://"
-              >Full List of Publications</a
-            >
-          </div>
-          <div class="border border-gray-300 rounded-xl h-96">
-            <button
-              class="w-full border-b border-gray-300 p-3 font-bold text-start text-xl text-gray-700"
-            >
-              <a href="http://">Tweets for @GVNlab</a>
-            </button>
-     
-          </div>
-        </section>
-      </article>
-      <!-- Youtube Video -->
-      <section class="lg:mx-52 mx-5 flex justify-center">
-        <iframe
-          class="hidden lg:block"
-          width="1103"
-          height="550"
-          src="https://www.youtube.com/embed/7Q3S6q97FiU?si=1t4w99HtRNPpCpgJ"
-        >
-        </iframe>
-        <iframe
-          class="block lg:hidden"
-          width="350"
-          height="200"
-          src="https://www.youtube.com/embed/7Q3S6q97FiU?si=1t4w99HtRNPpCpgJ"
-        >
-        </iframe>
+          <a class="underline text-yellow-600 font-medium" href="http://">Full List of Publications</a>
+        </div>
+        <div class="border border-gray-300 rounded-xl h-96">
+          <button class="w-full border-b border-gray-300 p-3 font-bold text-start text-xl text-gray-700">
+            <a href="http://">Tweets for @GVNlab</a>
+          </button>
+
+        </div>
       </section>
-      <!-- Icon Section -->
+    </article>
+    <!-- Youtube Video -->
+    <section class="lg:mx-52 mx-5 flex justify-center">
+      <iframe class="hidden lg:block" width="1103" height="550"
+        src="https://www.youtube.com/embed/7Q3S6q97FiU?si=1t4w99HtRNPpCpgJ">
+      </iframe>
+      <iframe class="block lg:hidden" width="350" height="200"
+        src="https://www.youtube.com/embed/7Q3S6q97FiU?si=1t4w99HtRNPpCpgJ">
+      </iframe>
+    </section>
+    <!-- Icon Section -->
+    <section class="lg:mx-52 mx-10 flex lg:flex-row flex-col items-center lg:items-start lg:justify-center gap-5">
+      <div
+        class="lg:w-96 w-56 flex flex-col items-center justify-center text-center border-transparent p-4 border-2 hover:border-yellow-600 hover:rounded-2xl transition-all duration-700 hover:bg-yellow-50">
+        <p class="text-[3rem] lg:text-[4.75rem] text-neutral-500">
+          <i class="fa-solid fa-binoculars"></i>
+        </p>
+        <p class="text-lg text-neutral-500 font-medium">Checkout...</p>
+        <p>
+          our Tissue Engineering Resource Center site
+          <a class="underline font-medium text-yellow-600" href="http://">nextgenterc.com!</a>
+        </p>
+      </div>
+
+    </section>
+    <!-- Affliations -->
+    <section class="lg:mx-52 grid lg:grid-cols-5 grid-cols-1 gap-y-5 ">
+      <p
+        class=" lg:row-span-6 lg:border-r border-b lg:border-b-0 border-gray-500 flex flex-col justify-center lg:text-end text-start p-5  text-2xl lg:text-3xl text-neutral-500 font-serif">
+        Our Affiliations
+      </p>
+      <a class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
+        href="http://">Tissue Engineering Resource Center (TERC)</a>
+      <a class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
+        href="http://">Columbia Engineering</a>
+      <a class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
+        href="http://">Department of Biomedical Engineering</a>
+      <a class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
+        href="http://">Department of Medicine</a>
+      <a class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
+        href="http://">Center for Dental and Craniofacial Research</a>
+      <a class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
+        href="http://">College of Dental Medicine</a>
+      <a class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
+        href="http://">Columbia Stem Cell Initiative</a>
+      <div></div>
+    </section>
+    <!-- Footer -->
+    <footer>
       <section
-        class="lg:mx-52 mx-10 flex lg:flex-row flex-col items-center lg:items-start lg:justify-center gap-5"
-      >
-        <div
-          class="lg:w-96 w-56 flex flex-col items-center justify-center text-center border-transparent p-4 border-2 hover:border-yellow-600 hover:rounded-2xl transition-all duration-700 hover:bg-yellow-50"
-        >
-          <p class="text-[3rem] lg:text-[4.75rem] text-neutral-500">
-            <i class="fa-solid fa-binoculars"></i>
-          </p>
-          <p class="text-lg text-neutral-500 font-medium">Checkout...</p>
-          <p>
-            our Tissue Engineering Resource Center site
-            <a class="underline font-medium text-yellow-600" href="http://"
-              >nextgenterc.com!</a
-            >
+        class="lg:px-52 px-5 bg-neutral-100 text-stone-600 py-10 grid lg:grid-cols-5 grid-cols-1 lg:gap-14 gap-5">
+        <div class="flex flex-col lg:flex-row lg:items-start gap-2 lg:col-span-2">
+          <p class="text-2xl"><i class="fa-solid fa-location-dot"></i></p>
+          <a class="" href="">Main Office and Lab
+            <span class="text-xs block">622 West 168th Street, Vanderbilt Clinic, Room 12-234 MC 104B ·
+              New York, NY 10032</span></a>
+        </div>
+        <div class="flex flex-col lg:flex-row lg:items-start gap-2">
+          <p class="text-2xl"><i class="fa-solid fa-envelope"></i></p>
+          <a class="" href="">Contact Us
+            <span
+              class="underline text-yellow-600 font-medium lg:text-sm text-[0.65rem] block">gvnlab@gmail.com</span></a>
+        </div>
+        <div class="space-x-2">
+          <p>Follow Us</p>
+          <p class="text-2xl text-sky-600">
+            <i class="fa-brands fa-twitter"></i>
           </p>
         </div>
-   
+        <div class="flex flex-col gap-y-1 lg:text-base text-xs">
+          <a class="font-thin text-2xl hover:underline" href="./index.html">Home</a>
+          <a class="underline text-sky-700 font-medium" href="pages/research.html">Research</a>
+          <a class="underline text-sky-700 font-medium" href="pages/publications.html">Publications</a>
+          <a class="underline text-sky-700 font-medium" href="pages/people.html">People</a>
+          <a class="underline text-sky-700 font-medium" href="pages/news.html">News</a>
+          <a class="underline text-sky-700 font-medium" href="pages/contact.html">Contact</a>
+          <a class="underline text-sky-700 font-medium" href="pages/positions.html">Positions</a>
+        </div>
       </section>
-      <!-- Affliations -->
-      <section class="lg:mx-52 grid lg:grid-cols-5 grid-cols-1 gap-y-5 ">
-        <p
-          class=" lg:row-span-6 lg:border-r border-b lg:border-b-0 border-gray-500 flex flex-col justify-center lg:text-end text-start p-5  text-2xl lg:text-3xl text-neutral-500 font-serif"
-        >
-          Our Affiliations
-        </p>
-        <a
-          class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
-          href="http://"
-          >Tissue Engineering Resource Center (TERC)</a
-        >
-        <a
-          class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
-          href="http://"
-          >Columbia Engineering</a
-        >
-        <a
-          class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
-          href="http://"
-          >Department of Biomedical Engineering</a
-        >
-        <a
-          class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
-          href="http://"
-          >Department of Medicine</a
-        >
-        <a
-          class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
-          href="http://"
-          >Center for Dental and Craniofacial Research</a
-        >
-        <a
-          class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
-          href="http://"
-          >College of Dental Medicine</a
-        >
-        <a
-          class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
-          href="http://"
-          >Columbia Stem Cell Initiative</a
-        >
-        <div></div>
-      </section>
-      <!-- Footer -->
-      <footer>
-        <section
-          class="lg:px-52 px-5 bg-neutral-100 text-stone-600 py-10 grid lg:grid-cols-5 grid-cols-1 lg:gap-14 gap-5"
-        >
-          <div
-            class="flex flex-col lg:flex-row lg:items-start gap-2 lg:col-span-2"
-          >
-            <p class="text-2xl"><i class="fa-solid fa-location-dot"></i></p>
-            <a class="" href=""
-              >Main Office and Lab
-              <span class="text-xs block"
-                >622 West 168th Street, Vanderbilt Clinic, Room 12-234 MC 104B ·
-                New York, NY 10032</span
-              ></a
-            >
-          </div>
-          <div class="flex flex-col lg:flex-row lg:items-start gap-2">
-            <p class="text-2xl"><i class="fa-solid fa-envelope"></i></p>
-            <a class="" href=""
-              >Contact Us
-              <span
-                class="underline text-yellow-600 font-medium lg:text-sm text-[0.65rem] block"
-                >gvnlab@gmail.com</span
-              ></a
-            >
-          </div>
-          <div class="space-x-2">
-            <p>Follow Us</p>
-            <p class="text-2xl text-sky-600">
-              <i class="fa-brands fa-twitter"></i>
-            </p>
-          </div>
-          <div class="flex flex-col gap-y-1 lg:text-base text-xs">
-            <a class="font-thin text-2xl hover:underline" href="./index.html"
-            >Home</a
-          >
-            <a class="underline text-sky-700 font-medium" href="pages/research.html"
-              >Research</a
-            >
-            <a
-              class="underline text-sky-700 font-medium"
-              href="pages/publications.html"
-              >Publications</a
-            >
-            <a class="underline text-sky-700 font-medium" href="pages/people.html"
-              >People</a
-            >
-            <a class="underline text-sky-700 font-medium" href="pages/news.html"
-              >News</a
-            >
-            <a class="underline text-sky-700 font-medium" href="pages/contact.html"
-              >Contact</a
-            >
-            <a class="underline text-sky-700 font-medium" href="pages/positions.html"
-              >Positions</a
-            >
-          </div>
-        </section>
-        <section
-          class="lg:px-52 px-10 bg-yellow-600 py-10 flex flex-col lg:flex-row justify-center items-center lg:justify-between"
-        >
-          <div class="flex items-center gap-x-2">
-            <!-- <p class="text-white lg:text-2xl"> -->
-              <!-- <i class="fa-solid fa-crown"></i>
+      <section
+        class="lg:px-52 px-10 bg-yellow-600 py-10 flex flex-col lg:flex-row justify-center items-center lg:justify-between">
+        <div class="flex items-center gap-x-2">
+          <!-- <p class="text-white lg:text-2xl"> -->
+          <!-- <i class="fa-solid fa-crown"></i>
             </p> -->
-            <img src="./images/culogo.png" class="w-6 h-6">
-            <a class="text-white lg:text-2xl font-serif" href="https://cu.ac.bd/" target="_blank"
-              >University of Chittagong
-              </a
-            >
-          </div>
-          <div class="space-x-3 flex flex-wrap">
-            <span
-              class=" text-white lg:text-sm text-[0.65rem]"
-         
-              >©2023 Bio-Nanomaterials and Tissue Engineering Laboratory (BNTELab)</span
-            >
-          </div>
-        </section>
-      </footer>
-    </main>
+          <img src="./images/cu-logo-black.svg" class="w-6 h-6">
+          <a class="text-white lg:text-2xl font-serif" href="https://cu.ac.bd/" target="_blank">University of Chittagong
+          </a>
+        </div>
+        <div class="space-x-3 flex flex-wrap">
+          <span class=" text-white lg:text-sm text-[0.65rem]">©2023 Bio-Nanomaterials and Tissue Engineering Laboratory
+            (BNTELab)</span>
+        </div>
+      </section>
+    </footer>
+  </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+
 </html>
