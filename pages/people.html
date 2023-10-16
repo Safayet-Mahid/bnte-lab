@@ -1,125 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
-      rel="stylesheet"
-    />
-    <title>BNTELab - People</title>
-  </head>
-  <body>
-    <!-- Responsive Header -->
-    <header
-      class="lg:hidden block p-5 flex justify-between items-center bg-sky-900 text-white"
-    >
-      <button
-        class="text-white text-lg bg-white-700 hover:bg-white-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg text-sm dark:bg-white-600 dark:hover:bg-white-700 focus:outline-none dark:focus:ring-white-800"
-        type="button"
-        data-drawer-target="drawer-navigation"
-        data-drawer-show="drawer-navigation"
-        aria-controls="drawer-navigation"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <a
-        class="uppercase lg:text-sm text-[0.85rem] font-medium font-serif"
-        href="../index.html"
-        >UNIVERSITY of CHITTAGONG</a
-      >
-      <button class="">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
 
-      <!-- drawer component -->
-      <div
-        id="drawer-navigation"
-        class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-sky-950 w-64 dark:bg-gray-800"
-        tabindex="-1"
-        aria-labelledby="drawer-navigation-label"
-      >
-        <button
-          type="button"
-          data-drawer-hide="drawer-navigation"
-          aria-controls="drawer-navigation"
-          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
-        >
-          <svg
-            class="w-3 h-3"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-            />
-          </svg>
-        </button>
-        <div class="py-4 overflow-y-auto">
-          <ul class="space-y-2 font-medium">
-            <li>
-              <a
-              href="../index.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">Home</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./research.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">Research</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./publications.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">Publications</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./people.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">People</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./news.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">News</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./contact.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="ml-3">Contact</span>
-              </a>
-            </li>
-            <!-- <li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <title>BNTELab - People</title>
+</head>
+
+<body>
+  <!-- Responsive Header -->
+  <header class="lg:hidden block p-5 flex justify-between items-center bg-sky-900 text-white">
+    <button
+      class="text-white text-lg bg-white-700 hover:bg-white-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg text-sm dark:bg-white-600 dark:hover:bg-white-700 focus:outline-none dark:focus:ring-white-800"
+      type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
+      aria-controls="drawer-navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <a class="uppercase lg:text-sm text-[0.85rem] font-medium font-serif" href="../index.html">UNIVERSITY of
+      CHITTAGONG</a>
+    <button class="">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+    <!-- drawer component -->
+    <div id="drawer-navigation"
+      class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-sky-950 w-64 dark:bg-gray-800"
+      tabindex="-1" aria-labelledby="drawer-navigation-label">
+      <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+        </svg>
+      </button>
+      <div class="py-4 overflow-y-auto">
+        <ul class="space-y-2 font-medium">
+          <li>
+            <a href="../index.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="./research.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">Research</span>
+            </a>
+          </li>
+          <li>
+            <a href="./publications.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">Publications</span>
+            </a>
+          </li>
+          <li>
+            <a href="./people.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">People</span>
+            </a>
+          </li>
+          <li>
+            <a href="./news.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">News</span>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="ml-3">Contact</span>
+            </a>
+          </li>
+          <!-- <li>
               <a
                 href="./positions.html"
                 class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
@@ -127,256 +84,163 @@
                 <span class="ml-3">Positions</span>
               </a>
             </li> -->
-          </ul>
-        </div>
+        </ul>
       </div>
-    </header>
-    <header class="lg:mx-52 mx-5 py-2 bg-white">
-      <div class="hidden lg:flex justify-between">
-        <a
-          class="uppercase text-sky-700 lg:text-sm text-[0.65rem] font-medium"
-          href="../index.html"
-          >UNIVERSITY of CHITTAGONG</a
-        >
-        <button class="text-cyan-700 text-lg">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </div>
-      <a
-        class="block lg:text-6xl text-2xl font-serif lg:py-10 py-5 text-cyan-800 font-light"
-        href="/"
-        >Bio-Nanomaterials and Tissue Engineering Laboratory (BNTELab)</a
-        ></a
-      >
-      <nav class="hidden lg:block space-x-10">
-        <a class="font-thin text-2xl hover:underline" href="../index.html"
-        >Home</a
-      >
-        <a class="font-thin text-2xl hover:underline" href="./research.html"
-          >Research</a
-        >
-        <a class="font-thin text-2xl hover:underline" href="./publications.html"
-          >Publications</a
-        >
-        <a class="font-thin text-2xl hover:underline" href="./people.html"
-          >People</a
-        >
-        <a class="font-thin text-2xl hover:underline" href="./news.html"
-          >News</a
-        >
-        <a class="font-thin text-2xl hover:underline" href="./contact.html"
-          >Contact</a
-        >
-        <!-- <a class="font-thin text-2xl hover:underline" href="./positions.html"
-          >Positions</a
-        > -->
-      </nav>
-    </header>
-    <main class="md:mx-52 mx-5">
-      <h1
-        class="lg:col-span-5 font-serif lg:text-6xl text-2xl lg:py-16 pb-5 text-slate-700"
-      >
-        People
-      </h1>
-      <!-- Button Section -->
-      <section class="flex flex-wrap gap-3 lg:text-[1.35rem] lg:mb-10 mb-5">
-        <button class="px-4 py-2 underline text-white bg-sky-700">All</button>
-        <button class="px-4 py-2 underline text-sky-700">Principal Investigator</button>
-        <button class="px-4 py-2 underline text-sky-700">Director of Research Operations</button>
-        <button class="px-4 py-2 underline text-sky-700">Senior Grants Administrator</button>
-        <button class="px-4 py-2 underline text-sky-700">Lab Manager</button>
-        <button class="px-4 py-2 underline text-sky-700">Research Engineer</button>
-        <button class="px-4 py-2 underline text-sky-700">Assistant Professor</button>
-        <button class="px-4 py-2 underline text-sky-700">Associate Research Scientist</button>
-        <button class="px-4 py-2 underline text-sky-700">Postdoctoral Research Fellow</button>
-        <button class="px-4 py-2 underline text-sky-700">Postdoctoral Research Scientist</button>
-        <button class="px-4 py-2 underline text-sky-700">MD/PhD Student</button>
-        <button class="px-4 py-2 underline text-sky-700">PhD Student</button>
-        <button class="px-4 py-2 underline text-sky-700">Research Assistant</button>
-        <button class="px-4 py-2 underline text-sky-700">Masters Student</button>
-        <button class="px-4 py-2 underline text-sky-700">Undergraduate Student</button>
-      </section>
-      <section class="grid lg:grid-cols-4 grid-cols-2 gap-5 lg:mb-10 mb-5">
-        <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-          <a href="#">
-            <img class="rounded-lg" src="../images/Dr. Kamol Dey.jpeg" alt="image description">
-          </a>
-          <figcaption class="absolute p-4 text-center lg:bottom-6 bottom-0 w-full bg-black/25">
-            <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">Principal Investigator</span> <br> Dr. Kamol Dey</p>
-          </figcaption>
-        </figure>
-        <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-          <a href="#">
-            <img class="rounded-lg" src="../images/Azmir.jpg" alt="image description">
-          </a>
-          <figcaption class="absolute p-4 text-center lg:bottom-6 bottom-0 w-full bg-black/25">
-            <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">Research Assistant</span> <br> Mohammed Syed Nurul Azam Azmir </p>
-          </figcaption>
-        </figure>
-        <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-          <a href="#">
-            <img class="rounded-lg" src="../images/Noyon.jpg" alt="image description">
-          </a>
-          <figcaption class="absolute p-4 text-center lg:bottom-6 bottom-0 w-full bg-black/25">
-            <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">MS Student</span> <br> Md. Noyon Moni</p>
-          </figcaption>
-        </figure>
-        <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-          <a href="#">
-            <img class="rounded-lg" src="../images/Anik.jpg" alt="image description">
-          </a>
-          <figcaption class="absolute p-4 text-center lg:bottom-6 bottom-0 w-full bg-black/25">
-            <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">MS Student</span> <br> Anik Dhali </p>
-          </figcaption>
-        </figure>
-        <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-          <a href="#">
-            <img class="rounded-lg" src="../images/Zui.jpeg" alt="image description">
-          </a>
-          <figcaption class="absolute p-4 text-center lg:bottom-6 bottom-0 w-full bg-black/25">
-            <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">Ex MS Student</span> <br> Farzana Aktar Zui</p>
-          </figcaption>
-        </figure>
-        <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-          <a href="#">
-            <img class="rounded-lg" src="../images/safayet.jpeg" alt="image description">
-          </a>
-          <figcaption class="absolute p-4 text-center lg:bottom-6 bottom-0 w-full bg-black/25">
-            <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">Ex MS Student</span> <br> Safayet Jamil</p>
-          </figcaption>
-        </figure>
-        <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-          <a href="#">
-            <img class="rounded-lg" src="../images/mehedi.jpeg" alt="image description">
-          </a>
-          <figcaption class="absolute p-4 text-center lg:bottom-6 bottom-0 w-full bg-black/25">
-            <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">Ex MS Student</span> <br> Muhammad Mehedi Hasan</p>
-          </figcaption>
-        </figure>
-      </section>
-    </main>
-    <!-- Affliations -->
-    <section class="lg:mx-52 grid lg:grid-cols-5 grid-cols-1 gap-y-5 mb-10">
-      <p
-        class="lg:row-span-4 lg:border-r border-b lg:border-b-0 border-gray-500 flex flex-col justify-center lg:text-end text-start p-5 text-2xl lg:text-4xl text-neutral-500 font-serif"
-      >
-        Columbia Affiliations
-      </p>
-      <a
-        class="text-cyan-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
-        href="http://"
-        >Tissue Engineering Resource Center (TERC)</a
-      >
-      <a
-        class="text-cyan-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
-        href="http://"
-        >Columbia Engineering</a
-      >
-      <a
-        class="text-cyan-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
-        href="http://"
-        >Department of Biomedical Engineering</a
-      >
-      <a
-        class="text-cyan-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
-        href="http://"
-        >Department of Medicine</a
-      >
-      <a
-        class="text-cyan-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
-        href="http://"
-        >Center for Dental and Craniofacial Research</a
-      >
-      <a
-        class="text-cyan-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
-        href="http://"
-        >College of Dental Medicine</a
-      >
-      <a
-        class="text-cyan-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 underline font-light font-serif px-5"
-        href="http://"
-        >Columbia Stem Cell Initiative</a
-      >
-      <div></div>
-    </section>
-    <!-- Footer -->
-    <footer>
-      <section
-        class="lg:px-52 px-10 bg-neutral-100 text-stone-600 py-10 grid lg:grid-cols-5 grid-cols-1 lg:gap-14 gap-5"
-      >
-        <div
-          class="flex flex-col lg:flex-row lg:items-start gap-2 lg:col-span-2"
-        >
-          <p class="text-2xl"><i class="fa-solid fa-location-dot"></i></p>
-          <a class="" href=""
-            >Main Office and Lab
-            <span class="text-xs block"
-              >622 West 168th Street, Vanderbilt Clinic, Room 12-234 MC 104B ·
-              New York, NY 10032</span
-            ></a
-          >
-        </div>
-        <div class="flex flex-col lg:flex-row lg:items-start gap-2">
-          <p class="text-2xl"><i class="fa-solid fa-envelope"></i></p>
-          <a class="" href=""
-            >Contact Us
-            <span
-              class="underline text-cyan-600 font-medium lg:text-sm text-[0.65rem] block"
-              >gvnlab@gmail.com</span
-            ></a
-          >
-        </div>
-        <div class="space-x-2">
-          <p>Follow Us</p>
-          <p class="text-2xl text-sky-600">
-            <i class="fa-brands fa-twitter"></i>
-          </p>
-        </div>
-      </section>
-      <section
-        class="lg:px-52 px-10 bg-sky-800 py-10 flex flex-col lg:flex-row justify-center items-center lg:justify-between"
-      >
-        <div class="flex items-start gap-x-2">
-          <p class="text-white lg:text-2xl">
-            <i class="fa-solid fa-crown"></i>
-          </p>
-          <a class="text-white lg:text-2xl font-serif" href=""
-            >Columbia University
-            <span class="lg:lg:text-sm text-[0.65rem] text-[0.65rem] block"
-              >In the city of New York</span
-            ></a
-          >
-        </div>
-        <div class="space-x-3 flex flex-wrap">
-          <a
-            class="underline text-white lg:text-sm text-[0.65rem]"
-            href="http://"
-            >©2023 Columbia University</a
-          >
-          <a
-            class="underline text-white lg:text-sm text-[0.65rem]"
-            href="http://"
-            >Accessibility</a
-          >
-          <a
-            class="underline text-white lg:text-sm text-[0.65rem]"
-            href="http://"
-            >Nondiscrimination</a
-          >
-          <a
-            class="underline text-white lg:text-sm text-[0.65rem]"
-            href="http://"
-            >Careers</a
-          >
-          <a
-            class="underline text-white lg:text-sm text-[0.65rem]"
-            href="http://"
-            >Built using Columbia Sites</a
-          >
-        </div>
-      </section>
-    </footer>
+    </div>
+  </header>
+  <header class="lg:mx-52 mx-5 py-2 bg-white">
+    <div class="hidden lg:flex justify-between">
+      <a class="uppercase text-yellow-600 lg:text-sm text-[0.65rem] font-medium flex gap-x-2 h-5"
+        href="https://cu.ac.bd/">
+        <img src="./../images/cu-logo-black.svg" alt="">
+        <span>University of Chittagong</span></a>
+      <div class="flex items-center gap-x-2">
+        <a href="https://acce.cu.ac.bd/"
+          class="uppercase text-yellow-600 lg:text-sm text-[0.65rem] font-medium flex gap-x-2 h-5 ">ACCE</a>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-  </body>
+      </div>
+    </div>
+    <div class="flex my-5 rounded-2xl items-center  h-24 bg-red-500">
+      <img src="./../images/bnte-logo.jpeg" class="w-24 h-24" alt="">
+
+      <a class="block lg:text-2xl text-2xl font-serif  text-white bg-red-500 font-light px-4 py-2 ms-2 "
+        href="/">Bio-Nanomaterials and Tissue Engineering Laboratory (BNTELab)</a>
+    </div>
+    <nav class="hidden lg:block space-x-10">
+      <a class="font-thin text-2xl hover:underline" href="../index.html">Home</a>
+      <a class="font-thin text-2xl hover:underline" href="./research.html">Research</a>
+      <a class="font-thin text-2xl hover:underline" href="./publications.html">Publications</a>
+      <a class="font-thin text-2xl hover:underline" href="./people.html">People</a>
+      <a class="font-thin text-2xl hover:underline" href="./news.html">News</a>
+      <a class="font-thin text-2xl hover:underline" href="./contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="md:mx-52 mx-5">
+    <h1 class="lg:col-span-5 font-serif lg:text-6xl text-2xl lg:py-16 pb-5 text-slate-700">
+      People
+    </h1>
+
+    <section class="grid lg:grid-cols-4 grid-cols-2 gap-5 lg:mb-10 mb-5">
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+        <a href="#">
+          <img class="rounded-lg" src="../images/Dr. Kamol Dey.jpeg" alt="image description">
+        </a>
+        <figcaption class="absolute p-4 text-center lg:bottom-6 bottom-0 w-full bg-black/25">
+          <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">Principal Investigator</span>
+            <br> Dr. Kamol Dey</p>
+        </figcaption>
+      </figure>
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+        <a href="#">
+          <img class="rounded-lg" src="../images/Azmir.jpg" alt="image description">
+        </a>
+        <figcaption class="absolute p-4 text-center lg:bottom-6 bottom-0 w-full bg-black/25">
+          <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">Research Assistant</span>
+            <br> Mohammed Syed Nurul Azam Azmir </p>
+        </figcaption>
+      </figure>
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+        <a href="#">
+          <img class="rounded-lg" src="../images/Noyon.jpg" alt="image description">
+        </a>
+        <figcaption class="absolute p-4 text-center lg:bottom-6 bottom-0 w-full bg-black/25">
+          <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">MS Student</span> <br> Md.
+            Noyon Moni</p>
+        </figcaption>
+      </figure>
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+        <a href="#">
+          <img class="rounded-lg" src="../images/Anik.jpg" alt="image description">
+        </a>
+        <figcaption class="absolute p-4 text-center lg:bottom-6 bottom-0 w-full bg-black/25">
+          <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">MS Student</span> <br> Anik
+            Dhali </p>
+        </figcaption>
+      </figure>
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+        <a href="#">
+          <img class="rounded-lg" src="../images/Zui.jpeg" alt="image description">
+        </a>
+        <figcaption class="absolute p-4 text-center lg:bottom-6 bottom-0 w-full bg-black/25">
+          <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">Ex MS Student</span> <br>
+            Farzana Aktar Zui</p>
+        </figcaption>
+      </figure>
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+        <a href="#">
+          <img class="rounded-lg" src="../images/safayet.jpeg" alt="image description">
+        </a>
+        <figcaption class="absolute p-4 text-center lg:bottom-6 bottom-0 w-full bg-black/25">
+          <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">Ex MS Student</span> <br>
+            Safayet Jamil</p>
+        </figcaption>
+      </figure>
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+        <a href="#">
+          <img class="rounded-lg" src="../images/mehedi.jpeg" alt="image description">
+        </a>
+        <figcaption class="absolute p-4 text-center lg:bottom-6 bottom-0 w-full bg-black/25">
+          <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">Ex MS Student</span> <br>
+            Muhammad Mehedi Hasan</p>
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+  <!-- Affliations -->
+  <section class="lg:mx-52 grid lg:grid-cols-5 grid-cols-1 gap-y-5 ">
+    <p
+      class=" lg:row-span-6 lg:border-r border-b lg:border-b-0 border-gray-500 flex flex-col justify-center lg:text-end text-start p-5  text-2xl lg:text-3xl text-neutral-500 font-serif">
+      Our Affiliations
+    </p>
+    <a target="_blank"
+      class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 hover:underline font-light font-serif px-5"
+      href="https://www.unibs.it/en/education/post-lauream/phd-programmes/phd-glance/mechanical-and-industrial-engineering">Mechanical
+      and Industrial Engineering, University of Brescia</a>
+    <a target="_blank"
+      class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 hover:underline font-light font-serif px-5"
+      href="https://acce.cu.ac.bd/accelab/brl-sumongangulilab">Biomaterials Research Laboratory (BRL)</a>
+    <a target="_blank"
+      class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 hover:underline font-light font-serif px-5"
+      href="https://cars.du.ac.bd/">Centre for Advanced Research in Sciences (CARS)</a>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <section class="lg:px-52 px-5 bg-neutral-100 text-stone-600 py-10 grid lg:grid-cols-4 grid-cols-1 lg:gap-14 gap-5">
+      <div class="flex flex-col lg:flex-row lg:items-start gap-2 lg:col-span-2">
+        <p class="text-2xl"><i class="fa-solid fa-location-dot"></i></p>
+        <a class="" href="">Address
+          <span class="text-xs block">Department of Applied Chemistry and Chemical Engineering (ACCE), <br>
+            Faculty of Science,<br>
+            University of Chittagong, <br>
+            Chittagong-4331, Bangladesh</span></a>
+      </div>
+      <div class="flex flex-col lg:flex-row lg:items-start gap-2 ">
+        <p class="text-2xl"><i class="fa-solid fa-envelope"></i></p>
+        <a class="" href="">Contact Us
+          <span
+            class="underline text-yellow-600 font-medium lg:text-sm text-[0.65rem] block">bntelabacce.cu@gmail.com</span></a>
+      </div>
+      <div class="space-x-2 ">
+        <p>Follow Us</p>
+        <p class="text-2xl text-sky-600">
+          <i class="fa-brands fa-twitter"></i>
+        </p>
+      </div>
+    </section>
+    <section
+      class="lg:px-52 px-10 bg-yellow-600 py-10 flex flex-col lg:flex-row justify-center items-center lg:justify-between">
+      <div class="flex items-center gap-x-2">
+        <img src="./../images//cu-logo-black.svg" class="w-6 h-6">
+        <a class="text-white lg:text-2xl " href="https://cu.ac.bd/" target="_blank">University of Chittagong</a>
+      </div>
+      <div class="space-x-3 flex flex-wrap">
+        <span class=" text-white lg:text-sm text-[0.65rem]">©2023 Bio-Nanomaterials and Tissue Engineering Laboratory
+          (BNTELab)</span>
+      </div>
+    </section>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+
 </html>
