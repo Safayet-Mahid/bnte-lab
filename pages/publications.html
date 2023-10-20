@@ -1,125 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
-      rel="stylesheet"
-    />
-    <title>BNTELab - Publications</title>
-  </head>
-  <body>
-    <!-- Responsive Header -->
-    <header
-      class="lg:hidden block p-5 flex justify-between items-center bg-sky-900 text-white"
-    >
-      <button
-        class="text-white text-lg bg-white-700 hover:bg-white-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg text-sm dark:bg-white-600 dark:hover:bg-white-700 focus:outline-none dark:focus:ring-white-800"
-        type="button"
-        data-drawer-target="drawer-navigation"
-        data-drawer-show="drawer-navigation"
-        aria-controls="drawer-navigation"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <a
-        class="uppercase lg:text-sm text-[0.85rem] font-medium font-serif"
-        href="../index.html"
-        >UNIVERSITY of CHITTAGONG</a
-      >
-      <button class="">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
 
-      <!-- drawer component -->
-      <div
-        id="drawer-navigation"
-        class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-sky-950 w-64 dark:bg-gray-800"
-        tabindex="-1"
-        aria-labelledby="drawer-navigation-label"
-      >
-        <button
-          type="button"
-          data-drawer-hide="drawer-navigation"
-          aria-controls="drawer-navigation"
-          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
-        >
-          <svg
-            class="w-3 h-3"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-            />
-          </svg>
-        </button>
-        <div class="py-4 overflow-y-auto">
-          <ul class="space-y-2 font-medium">
-            <li>
-              <a
-              href="../index.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">Home</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./research.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">Research</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./publications.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">Publications</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./people.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">People</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./news.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="flex-1 ml-3 whitespace-nowrap">News</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./contact.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="ml-3">Contact</span>
-              </a>
-            </li>
-            <!-- <li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <title>BNTELab - Publications</title>
+</head>
+
+<body>
+  <!-- Responsive Header -->
+  <header class="lg:hidden block p-5 flex justify-between items-center bg-sky-900 text-white">
+    <button
+      class="text-white text-lg bg-white-700 hover:bg-white-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg text-sm dark:bg-white-600 dark:hover:bg-white-700 focus:outline-none dark:focus:ring-white-800"
+      type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
+      aria-controls="drawer-navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <a class="uppercase lg:text-sm text-[0.85rem] font-medium font-serif" href="../index.html">UNIVERSITY of
+      CHITTAGONG</a>
+    <button class="">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+    <!-- drawer component -->
+    <div id="drawer-navigation"
+      class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-sky-950 w-64 dark:bg-gray-800"
+      tabindex="-1" aria-labelledby="drawer-navigation-label">
+      <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+        </svg>
+      </button>
+      <div class="py-4 overflow-y-auto">
+        <ul class="space-y-2 font-medium">
+          <li>
+            <a href="../index.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="./research.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">Research</span>
+            </a>
+          </li>
+          <li>
+            <a href="./publications.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">Publications</span>
+            </a>
+          </li>
+          <li>
+            <a href="./people.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">People</span>
+            </a>
+          </li>
+          <li>
+            <a href="./news.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ml-3 whitespace-nowrap">News</span>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html"
+              class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="ml-3">Contact</span>
+            </a>
+          </li>
+          <!-- <li>
               <a
                 href="./positions.html"
                 class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
@@ -127,302 +84,299 @@
                 <span class="ml-3">Positions</span>
               </a>
             </li> -->
-          </ul>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <header class="lg:mx-52 mx-5 py-2 bg-white">
+    <div class="hidden lg:flex justify-between">
+      <a class="uppercase text-yellow-600 lg:text-sm text-[0.65rem] font-medium flex gap-x-2 h-5"
+        href="https://cu.ac.bd/">
+        <img src="./../images/cu-logo-black.svg" alt="">
+        <span>University of Chittagong</span></a>
+      <div class="flex items-center gap-x-2">
+        <a href="https://acce.cu.ac.bd/"
+          class="uppercase text-yellow-600 lg:text-sm text-[0.65rem] font-medium flex gap-x-2 h-5 ">ACCE</a>
+
+      </div>
+    </div>
+    <div class="flex my-5 rounded-2xl items-center  h-24 bg-red-500">
+      <img src="./../images/bnte-logo.jpeg" class="w-24 h-24" alt="">
+
+      <a class="block lg:text-2xl text-2xl font-serif  text-white bg-red-500 font-light px-4 py-2 ms-2 "
+        href="/">Bio-Nanomaterials and Tissue Engineering Laboratory (BNTELab)</a>
+    </div>
+    <nav class="hidden lg:block space-x-10">
+      <a class="font-thin text-2xl hover:underline" href="../index.html">Home</a>
+      <a class="font-thin text-2xl hover:underline" href="./research.html">Research</a>
+      <a class="font-thin text-2xl hover:underline" href="./publications.html">Publications</a>
+      <a class="font-thin text-2xl hover:underline" href="./people.html">People</a>
+      <a class="font-thin text-2xl hover:underline" href="./news.html">News</a>
+      <a class="font-thin text-2xl hover:underline" href="./contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="md:mx-52 mx-5 grid lg:grid-cols-6 grid-cols-1 gap-x-10">
+    <h1 class="lg:col-span-5 font-serif lg:text-6xl text-2xl lg:py-8  text-slate-700">
+      Research
+    </h1>
+    <div class="grid grid-cols-2 lg:col-span-3 text-white text-xl gap-8 py-2 lg:px-3">
+      <button class="rounded-lg bg-sky-800 lg:p-4 lg:text-lg text-sm p-3 text-center">
+        <a target="_blank"
+          href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=ifAdIwEAAAAJ&sortby=pubdate">Google
+          Scholar Publications</a>
+      </button>
+    </div>
+    <section class="lg:col-span-6 lg:my-10 my-5 ">
+      <div class="w-full bg-stone-50 py-4 pl-4 pr-10">
+        <p class="uppercase font-medium text-stone-700 pb-10 text-sm">
+          Patent
+        </p>
+        <div class="pb-10 space-y-2">
+          <h2 class="lg:text-2xl text-xl">Tridimensional Bioactive Porous Body for Bone Tissue Regeneration and Process
+            for the Production Thereof.</h2>
+          <p class="text-stone-500 space-x-2">
+            <span>Issued on 8<sup>th</sup> July 2022</span><a target="_blank" class="text-sky-700 underline"
+              href="https://www.mysciencework.com/patent/show/tridimensional-bioactive-porous-body-bone-tissue-regeneration-process-its-preparation-EP4178633A1">Citation</a>
+          </p>
+
         </div>
+        <!-- <div class="pb-10 space-y-2">
+          <h2 class="lg:text-2xl text-xl">
+            A multi-organ chip with matured tissue niches linked by vascular
+            flow
+          </h2>
+          <p class="text-stone-500 space-x-2">
+            <span>Nature Biomedical Engineering. April 2022</span><a class="text-sky-700 underline"
+              href="http://">Citation</a>
+          </p>
+          <button class="border-2 border-cyan-700 rounded px-3 py-1 w-fit">
+            <a class="underline text-cyan-600 text-xs lg:text-sm uppercase" href="http://">PDF Download</a>
+          </button>
+        </div> -->
+        <!-- <div class="pb-10 space-y-2">
+          <h2 class="lg:text-2xl text-xl">
+            Imaging-Guided Bioreactor for Generating Bioengineered Airway
+            Tissue
+          </h2>
+          <p class="text-stone-500 space-x-2">
+            <span>JOVE. April 2022</span><a class="text-sky-700 underline" href="http://">Citation</a>
+          </p>
+          <button class="border-2 border-cyan-700 rounded px-3 py-1 w-fit">
+            <a class="underline text-cyan-600 text-xs lg:text-sm uppercase" href="http://">PDF Download</a>
+          </button>
+        </div> -->
       </div>
-    </header>
-    <header class="lg:mx-52 mx-5 py-2 bg-white">
-      <div class="hidden lg:flex justify-between">
-        <a class="uppercase text-yellow-600 lg:text-sm text-[0.65rem] font-medium flex gap-x-2 h-5"
-          href="https://cu.ac.bd/">
-          <img src="./../images/cu-logo-black.svg" alt="">
-          <span>University of Chittagong</span></a>
-        <div class="flex items-center gap-x-2">
-          <a href="https://acce.cu.ac.bd/"
-            class="uppercase text-yellow-600 lg:text-sm text-[0.65rem] font-medium flex gap-x-2 h-5 ">ACCE</a>
-  
+      <section class="space-y-8">
+        <h1 class="lg:text-3xl text-2xl">2023</h1>
+        <!-- article  -->
+        <div
+          class="space-y-2 px-3 rounded-lg border-2 py-3 border-transparent hover:border-yellow-600 hover:bg-yellow-50 hover:translate-x-2 hover:-translate-y-2  transition-all">
+          <h2 class="lg:text-xl text-xl  ">
+            <a target="_blank" href="https://www.mdpi.com/2313-7673/8/6/473"> Designing Biomimetic Conductive
+              Gelatin-Chitosan–Carbon
+              Black Nanocomposite Hydrogels for Tissue
+              Engineering</a>
+          </h2>
+          <p class="text-xs">Published on : 3<sup>rd</sup> October, 23</p>
         </div>
-      </div>
-      <div class="flex my-5 rounded-2xl items-center  h-24 bg-red-500">
-        <img src="./../images/bnte-logo.jpeg" class="w-24 h-24" alt="">
-  
-        <a class="block lg:text-2xl text-2xl font-serif  text-white bg-red-500 font-light px-4 py-2 ms-2 "
-          href="/">Bio-Nanomaterials and Tissue Engineering Laboratory (BNTELab)</a>
-      </div>
-      <nav class="hidden lg:block space-x-10">
-        <a class="font-thin text-2xl hover:underline" href="../index.html">Home</a>
-        <a class="font-thin text-2xl hover:underline" href="./research.html">Research</a>
-        <a class="font-thin text-2xl hover:underline" href="./publications.html">Publications</a>
-        <a class="font-thin text-2xl hover:underline" href="./people.html">People</a>
-        <a class="font-thin text-2xl hover:underline" href="./news.html">News</a>
-        <a class="font-thin text-2xl hover:underline" href="./contact.html">Contact</a>
-      </nav>
-    </header>
-    <main class="md:mx-52 mx-5 grid lg:grid-cols-6 grid-cols-1 gap-x-10">
-      <h1
-        class="lg:col-span-5 font-serif lg:text-6xl text-2xl lg:py-16 pb-5 text-slate-700"
-      >
-        Research
-      </h1>
-      <div class="grid grid-cols-2 lg:col-span-3 text-white text-xl gap-8 py-3 lg:px-3">
-        <button class="rounded-lg bg-sky-800 lg:p-4 lg:text-lg text-sm p-3 text-center">NCBI Publications</button>
-        <button class="rounded-lg bg-sky-800 lg:p-4 lg:text-lg text-sm p-3 text-center">
-          Google Scholar Publications
+
+        <!-- article  -->
+        <div
+          class="space-y-2 px-3 rounded-lg border-2 py-3 border-transparent hover:border-yellow-600 hover:bg-yellow-50 hover:translate-x-2 hover:-translate-y-2  transition-all">
+          <h2 class="lg:text-xl text-xl  ">
+            <a target="_blank"
+              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ifAdIwEAAAAJ&sortby=pubdate&citation_for_view=ifAdIwEAAAAJ:bEWYMUwI8FkC"
+              class="">Size controlled biosynthesis of silver nanoparticles using Ophiorrhiza mungos, Ophiorrhiza
+              harrisiana and Ophiorrhiza rugosa aqueous leaf extract and their antimicrobial activity</a>
+          </h2>
+          <p class="text-xs">Published on : 1<sup>st</sup> May, 23</p>
+        </div>
+
+        <!-- article  -->
+        <div
+          class="space-y-2 px-3 rounded-lg border-2 py-3 border-transparent hover:border-yellow-600 hover:bg-yellow-50 hover:translate-x-2 hover:-translate-y-2  transition-all">
+          <h2 class="lg:text-xl text-xl  ">
+            <a target="_blank" href="https://www.researchsquare.com/article/rs-2658440/v1" class="">Hydrogel-chitosan
+              and polylactic
+              acid-polycaprolactone bioengineered scaffolds for reconstruction
+              of mandibular defects: a preclinical in vivo study with assessment of translationally relevant aspects</a>
+          </h2>
+          <p class="text-xs">Published on : 20<sup>th</sup> April, 23</p>
+        </div>
+        <!-- article  -->
+        <div
+          class="space-y-2 px-3 rounded-lg border-2 py-3 border-transparent hover:border-yellow-600 hover:bg-yellow-50 hover:translate-x-2 hover:-translate-y-2  transition-all">
+          <h2 class="lg:text-xl text-xl  ">
+            <a target="_blank" href="https://www.mdpi.com/2673-8023/3/2/29">Designing Viscoelastic Gelatin-PEG
+              Macroporous Hybrid
+              Hydrogel with Anisotropic Morphology and
+              Mechanical Properties for Tissue Engineering Application</a>
+          </h2>
+          <p class="text-xs">Published on : 11<sup>th</sup> April, 23</p>
+        </div>
+      </section>
+
+
+      <section class="space-y-8">
+        <h1 class="lg:text-3xl text-2xl">2022</h1>
+        <!-- article  -->
+        <div
+          class="space-y-2 px-3 rounded-lg border-2 py-3 border-transparent hover:border-yellow-600 hover:bg-yellow-50 hover:translate-x-2 hover:-translate-y-2  transition-all">
+          <h2 class="lg:text-xl text-xl  ">
+            <a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S2352492822015318"
+              class="">Facile synthesis of N-doped biphasic TiO2 nanoparticles with enhanced visible light-driven
+              photocatalytic performance</a>
+          </h2>
+          <p class="text-xs">Published on : 1<sup>st</sup> December, 22</p>
+        </div>
+
+        <!-- article  -->
+        <div
+          class="space-y-2 px-3 rounded-lg border-2 py-3 border-transparent hover:border-yellow-600 hover:bg-yellow-50 hover:translate-x-2 hover:-translate-y-2  transition-all">
+          <h2 class="lg:text-xl text-xl  ">
+            <a target="_blank" href="https://journals.sagepub.com/doi/abs/10.1177/02601060221124068"
+              class="">Association of food habit with the COVID-19 severity and hospitalization: A cross-sectional study
+              among the recovered individuals in Bangladesh</a>
+          </h2>
+          <p class="text-xs">Published on : 6<sup>th</sup> September, 22</p>
+        </div>
+
+        <!-- article  -->
+        <div
+          class="space-y-2 px-3 rounded-lg border-2 py-3 border-transparent hover:border-yellow-600 hover:bg-yellow-50 hover:translate-x-2 hover:-translate-y-2  transition-all">
+          <h2 class="lg:text-xl text-xl  ">
+            <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9288138/" class="">Association of
+              comorbidities with the COVID-19 severity and hospitalization: A study among the
+              recovered individuals in Bangladesh</a>
+          </h2>
+          <p class="text-xs">Published on : 22<sup>th</sup> July, 23</p>
+        </div>
+
+        <!-- article  -->
+        <div
+          class="space-y-2 px-3 rounded-lg border-2 py-3 border-transparent hover:border-yellow-600 hover:bg-yellow-50 hover:translate-x-2 hover:-translate-y-2  transition-all">
+          <h2 class="lg:text-xl text-xl  ">
+            <a target="_blank" href="https://www.mdpi.com/1422-0067/23/9/4533" class="">Hybrid Core-Shell Polymer
+              Scaffold for Bone Tissue Regeneration</a>
+          </h2>
+          <p class="text-xs">Published on : 20<sup>th</sup> April, 22</p>
+        </div>
+      </section>
+
+      <div class="my-auto mx-auto w-full flex justify-center space-y-4">
+        <button class="border-2 border-yellow-600 hover:bg-yellow-100 py-1 px-6 rounded-lg text-yellow-600">
+          <a target="_blank"
+            href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=ifAdIwEAAAAJ&sortby=pubdate">See
+            All Publication</a>
         </button>
       </div>
-      <section class="lg:col-span-4 lg:my-10 my-5 space-y-5">
-        <div class="w-full bg-stone-50 py-4 pl-4 pr-10">
-          <p class="uppercase font-medium text-stone-700 pb-10 text-sm">
-            FEATURED PUBLICATION
-          </p>
-          <div class="pb-10 space-y-3.5">
-            <h2 class="lg:text-2xl text-xl">A Guide to the Organs-on-a-Chip</h2>
-            <p class="text-stone-500 space-x-2">
-              <span>Nature Reviews. May 2022</span
-              ><a class="text-sky-700 underline" href="http://">Citation</a>
-            </p>
-            <button class="border-2 border-cyan-700 rounded px-3 py-1 w-fit">
-              <a
-                class="underline text-cyan-600 text-xs lg:text-sm uppercase"
-                href="http://"
-                >PDF Download</a
-              >
-            </button>
-          </div>
-          <div class="pb-10 space-y-3.5">
-            <h2 class="lg:text-2xl text-xl">
-              A multi-organ chip with matured tissue niches linked by vascular
-              flow
-            </h2>
-            <p class="text-stone-500 space-x-2">
-              <span>Nature Biomedical Engineering. April 2022</span
-              ><a class="text-sky-700 underline" href="http://">Citation</a>
-            </p>
-            <button class="border-2 border-cyan-700 rounded px-3 py-1 w-fit">
-              <a
-                class="underline text-cyan-600 text-xs lg:text-sm uppercase"
-                href="http://"
-                >PDF Download</a
-              >
-            </button>
-          </div>
-          <div class="pb-10 space-y-3.5">
-            <h2 class="lg:text-2xl text-xl">
-              Imaging-Guided Bioreactor for Generating Bioengineered Airway
-              Tissue
-            </h2>
-            <p class="text-stone-500 space-x-2">
-              <span>JOVE. April 2022</span
-              ><a class="text-sky-700 underline" href="http://">Citation</a>
-            </p>
-            <button class="border-2 border-cyan-700 rounded px-3 py-1 w-fit">
-              <a
-                class="underline text-cyan-600 text-xs lg:text-sm uppercase"
-                href="http://"
-                >PDF Download</a
-              >
-            </button>
-          </div>
-        </div>
-        <section class="space-y-8">
-          <h1 class="lg:text-3xl text-2xl">2023</h1>
-          <div class="space-y-3.5">
-            <h2 class="lg:text-2xl text-xl">
-              A multi-organ chip with matured tissue niches linked by vascular
-              flow
-            </h2>
-            <p class="text-stone-500 space-x-2">
-              <span>Nature Biomedical Engineering. April 2022</span
-              ><a class="text-sky-700 underline" href="http://">Citation</a>
-            </p>
-            <button class="border-2 border-cyan-700 rounded px-3 py-1 w-fit">
-              <a
-                class="underline text-cyan-600 text-xs lg:text-sm uppercase"
-                href="http://"
-                >PDF Download</a
-              >
-            </button>
-          </div>
-        </section>
-        <section class="space-y-8">
-          <h1 class="lg:text-3xl text-2xl">2022</h1>
-          <div class="space-y-3.5">
-            <h2 class="lg:text-2xl text-xl">
-              A multi-organ chip with matured tissue niches linked by vascular
-              flow
-            </h2>
-            <p class="text-stone-500 space-x-2">
-              <span>Nature Biomedical Engineering. April 2022</span
-              ><a class="text-sky-700 underline" href="http://">Citation</a>
-            </p>
-            <button class="border-2 border-cyan-700 rounded px-3 py-1 w-fit">
-              <a
-                class="underline text-cyan-600 text-xs lg:text-sm uppercase"
-                href="http://"
-                >PDF Download</a
-              >
-            </button>
-          </div>
-          <div class="space-y-3.5">
-            <h2 class="lg:text-2xl text-xl">
-              A multi-organ chip with matured tissue niches linked by vascular
-              flow
-            </h2>
-            <p class="text-stone-500 space-x-2">
-              <span>Nature Biomedical Engineering. April 2022</span
-              ><a class="text-sky-700 underline" href="http://">Citation</a>
-            </p>
-            <button class="border-2 border-cyan-700 rounded px-3 py-1 w-fit">
-              <a
-                class="underline text-cyan-600 text-xs lg:text-sm uppercase"
-                href="http://"
-                >PDF Download</a
-              >
-            </button>
-          </div>
-          <div class="space-y-3.5">
-            <h2 class="lg:text-2xl text-xl">
-              A multi-organ chip with matured tissue niches linked by vascular
-              flow
-            </h2>
-            <p class="text-stone-500 space-x-2">
-              <span>Nature Biomedical Engineering. April 2022</span
-              ><a class="text-sky-700 underline" href="http://">Citation</a>
-            </p>
-            <button class="border-2 border-cyan-700 rounded px-3 py-1 w-fit">
-              <a
-                class="underline text-cyan-600 text-xs lg:text-sm uppercase"
-                href="http://"
-                >PDF Download</a
-              >
-            </button>
-          </div>
-        </section>
-      </section>
-      <!-- Sorting Buttons -->
-      <section class="lg:col-span-2 lg:my-10 my-5 space-y-5">
-        <p class="uppercase font-medium text-stone-700 text-sm">
-          SORT PUBLICATIONS BY
-        </p>
-        <section class="w-full space-y-3">
-          <h2 class="text-stone-500 text-xl">Keyword filter:</h2>
-          <div class="relative">
-            <input
-              class="border-0 bg-stone-200 w-full"
-              type="text"
-              placeholder="Type keywords to filter"
-              name=""
-              id=""
-            />
-            <button class="absolute top-2 right-2">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </div>
-
-          <div>
-            <button
-              class="border border-stone-400 bg-stone-200 w-full px-2.5 py-3.5 flex justify-between items-center"
-            >
-              <span>Years</span>
-              <svg
-                class="w-2.5 h-2.5 ml-2.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 10 6"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m1 1 4 4 4-4"
-                />
-              </svg>
-            </button>
-            <ul class="border-0 bg-stone-50 w-full">
-              <li class="w-full border-b border-stone-200 px-2.5 py-3.5">
-                <a class="underline text-sm" href="http://"
-                  >Featured Publication</a
-                >
-              </li>
-              <li class="w-full border-b border-stone-200 px-2.5 py-3.5">
-                <a class="underline text-sm" href="http://">2023</a>
-              </li>
-              <li class="w-full border-b border-stone-200 px-2.5 py-3.5">
-                <a class="underline text-sm" href="http://">2022</a>
-              </li>
-              <li class="w-full border-b border-stone-200 px-2.5 py-3.5">
-                <a class="underline text-sm" href="http://">2021</a>
-              </li>
-              <li class="w-full border-b border-stone-200 px-2.5 py-3.5">
-                <a class="underline text-sm" href="http://">2020</a>
-              </li>
-              <li class="w-full border-b border-stone-200 px-2.5 py-3.5">
-                <a class="underline text-sm" href="http://">2019</a>
-              </li>
-              <li class="w-full border-b border-stone-200 px-2.5 py-3.5">
-                <a class="underline text-sm" href="http://">2018</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </section>
-    </main>
-    <!-- Affliations -->
-    <section class="lg:mx-52 grid lg:grid-cols-5 grid-cols-1 gap-y-5 ">
-      <p
-        class=" lg:row-span-6 lg:border-r border-b lg:border-b-0 border-gray-500 flex flex-col justify-center lg:text-end text-start p-5  text-2xl lg:text-3xl text-neutral-500 font-serif">
-        Our Affiliations
-      </p>
-      <a target="_blank"
-        class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 hover:underline font-light font-serif px-5"
-        href="https://www.unibs.it/en/education/post-lauream/phd-programmes/phd-glance/mechanical-and-industrial-engineering">Mechanical
-        and Industrial Engineering, University of Brescia</a>
-      <a target="_blank"
-        class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 hover:underline font-light font-serif px-5"
-        href="https://acce.cu.ac.bd/accelab/brl-sumongangulilab">Biomaterials Research Laboratory (BRL)</a>
-      <a target="_blank"
-        class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 hover:underline font-light font-serif px-5"
-        href="https://cars.du.ac.bd/">Centre for Advanced Research in Sciences (CARS)</a>
     </section>
-    <!-- Footer -->
-    <footer>
-      <section class="lg:px-52 px-5 bg-neutral-100 text-stone-600 py-10 grid lg:grid-cols-4 grid-cols-1 lg:gap-14 gap-5">
-        <div class="flex flex-col lg:flex-row lg:items-start gap-2 lg:col-span-2">
-          <p class="text-2xl"><i class="fa-solid fa-location-dot"></i></p>
-          <a class="" href="">Address
-            <span class="text-xs block">Department of Applied Chemistry and Chemical Engineering (ACCE), <br>
-              Faculty of Science,<br>
-              University of Chittagong, <br>
-              Chittagong-4331, Bangladesh</span></a>
-        </div>
-        <div class="flex flex-col lg:flex-row lg:items-start gap-2 ">
-          <p class="text-2xl"><i class="fa-solid fa-envelope"></i></p>
-          <a class="" href="">Contact Us
-            <span
-              class="underline text-yellow-600 font-medium lg:text-sm text-[0.65rem] block">bntelabacce.cu@gmail.com</span></a>
-        </div>
-        <div class="space-x-2 ">
-          <p>Follow Us</p>
-          <p class="text-2xl text-sky-600">
-            <i class="fa-brands fa-twitter"></i>
-          </p>
-        </div>
-      </section>
-      <section
-        class="lg:px-52 px-10 bg-yellow-600 py-10 flex flex-col lg:flex-row justify-center items-center lg:justify-between">
-        <div class="flex items-center gap-x-2">
-          <img src="./../images//cu-logo-black.svg" class="w-6 h-6">
-          <a class="text-white lg:text-2xl " href="https://cu.ac.bd/" target="_blank">University of Chittagong</a>
-        </div>
-        <div class="space-x-3 flex flex-wrap">
-          <span class=" text-white lg:text-sm text-[0.65rem]">©2023 Bio-Nanomaterials and Tissue Engineering Laboratory
-            (BNTELab)</span>
-        </div>
-      </section>
-    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-  </body>
+    <!-- Sorting Buttons -->
+    <!-- <section class="lg:col-span-2 lg:my-10 my-5 space-y-5">
+      <p class="uppercase font-medium text-stone-700 text-sm">
+        SORT PUBLICATIONS BY
+      </p>
+      <section class="w-full space-y-3">
+        <h2 class="text-stone-500 text-xl">Keyword filter:</h2>
+        <div class="relative">
+          <input class="border-0 bg-stone-200 w-full" type="text" placeholder="Type keywords to filter" name="" id="" />
+          <button class="absolute top-2 right-2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <div>
+          <button class="border border-stone-400 bg-stone-200 w-full px-2.5 py-3.5 flex justify-between items-center">
+            <span>Years</span>
+            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg>
+          </button>
+          <ul class="border-0 bg-stone-50 w-full">
+            <li class="w-full border-b border-stone-200 px-2.5 py-3.5">
+              <a class="underline text-sm" href="http://">Featured Publication</a>
+            </li>
+            <li class="w-full border-b border-stone-200 px-2.5 py-3.5">
+              <a class="underline text-sm" href="http://">2023</a>
+            </li>
+            <li class="w-full border-b border-stone-200 px-2.5 py-3.5">
+              <a class="underline text-sm" href="http://">2022</a>
+            </li>
+            <li class="w-full border-b border-stone-200 px-2.5 py-3.5">
+              <a class="underline text-sm" href="http://">2021</a>
+            </li>
+            <li class="w-full border-b border-stone-200 px-2.5 py-3.5">
+              <a class="underline text-sm" href="http://">2020</a>
+            </li>
+            <li class="w-full border-b border-stone-200 px-2.5 py-3.5">
+              <a class="underline text-sm" href="http://">2019</a>
+            </li>
+            <li class="w-full border-b border-stone-200 px-2.5 py-3.5">
+              <a class="underline text-sm" href="http://">2018</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section> -->
+  </main>
+  <!-- Affliations -->
+  <section class="lg:mx-52 grid lg:grid-cols-5 grid-cols-1 gap-y-5 ">
+    <p
+      class=" lg:row-span-6 lg:border-r border-b lg:border-b-0 border-gray-500 flex flex-col justify-center lg:text-end text-start p-5  text-2xl lg:text-3xl text-neutral-500 font-serif">
+      Our Affiliations
+    </p>
+    <a target="_blank"
+      class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 hover:underline font-light font-serif px-5"
+      href="https://www.unibs.it/en/education/post-lauream/phd-programmes/phd-glance/mechanical-and-industrial-engineering">Mechanical
+      and Industrial Engineering, University of Brescia</a>
+    <a target="_blank"
+      class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 hover:underline font-light font-serif px-5"
+      href="https://acce.cu.ac.bd/accelab/brl-sumongangulilab">Biomaterials Research Laboratory (BRL)</a>
+    <a target="_blank"
+      class="text-yellow-700 text-[1.1rem] lg:text-[1.30rem] lg:col-span-2 hover:underline font-light font-serif px-5"
+      href="https://cars.du.ac.bd/">Centre for Advanced Research in Sciences (CARS)</a>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <section class="lg:px-52 px-5 bg-neutral-100 text-stone-600 py-10 grid lg:grid-cols-4 grid-cols-1 lg:gap-14 gap-5">
+      <div class="flex flex-col lg:flex-row lg:items-start gap-2 lg:col-span-2">
+        <p class="text-2xl"><i class="fa-solid fa-location-dot"></i></p>
+        <a class="" href="">Address
+          <span class="text-xs block">Department of Applied Chemistry and Chemical Engineering (ACCE), <br>
+            Faculty of Science,<br>
+            University of Chittagong, <br>
+            Chittagong-4331, Bangladesh</span></a>
+      </div>
+      <div class="flex flex-col lg:flex-row lg:items-start gap-2 ">
+        <p class="text-2xl"><i class="fa-solid fa-envelope"></i></p>
+        <a class="" href="">Contact Us
+          <span
+            class="underline text-yellow-600 font-medium lg:text-sm text-[0.65rem] block">bntelabacce.cu@gmail.com</span></a>
+      </div>
+      <div class="space-x-2 ">
+        <p>Follow Us</p>
+        <p class="text-2xl text-sky-600">
+          <i class="fa-brands fa-twitter"></i>
+        </p>
+      </div>
+    </section>
+    <section
+      class="lg:px-52 px-10 bg-yellow-600 py-10 flex flex-col lg:flex-row justify-center items-center lg:justify-between">
+      <div class="flex items-center gap-x-2">
+        <img src="./../images//cu-logo-black.svg" class="w-6 h-6">
+        <a class="text-white lg:text-2xl " href="https://cu.ac.bd/" target="_blank">University of Chittagong</a>
+      </div>
+      <div class="space-x-3 flex flex-wrap">
+        <span class=" text-white lg:text-sm text-[0.65rem]">©2023 Bio-Nanomaterials and Tissue Engineering Laboratory
+          (BNTELab)</span>
+      </div>
+    </section>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+
 </html>
