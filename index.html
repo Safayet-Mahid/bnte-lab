@@ -17,7 +17,7 @@
 
 <body class="">
   <!-- Responsive Header -->
-  <header class="lg:hidden block p-5 flex justify-between items-center bg-yellow-900 text-white">
+  <header class="lg:hidden block p-5 flex justify-between items-center bg-yellow-700 text-white">
     <button
       class="text-white text-lg bg-white-700 hover:bg-white-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg text-sm dark:bg-white-600 dark:hover:bg-white-700 focus:outline-none dark:focus:ring-white-800"
       type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
@@ -25,12 +25,18 @@
       <i class="fa-solid fa-bars"></i>
     </button>
     <a class="uppercase lg:text-sm text-[0.85rem] font-medium font-serif" href="https://cu.ac.bd/">
-      <img src="./images/culogo.png" alt="">
-      <span>UNIVERSITY of CHITTAGONG</span>
+      <div class="flex items-center gap-x-2">
+        <img src="./images/cu-logo-black.svg" alt="" class="h-5">
+        <span class="text-sm">UNIVERSITY of CHITTAGONG</span>
+      </div>
+
+      <div class="flex items-center gap-x-2">
+        <a href="https://acce.cu.ac.bd/"
+          class="uppercase  lg:text-sm text-[0.7rem] font-medium flex gap-x-2 h-5 ">ACCE</a>
+
+      </div>
     </a>
-    <button class="">
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </button>
+
 
     <!-- drawer component -->
     <div id="drawer-navigation"
@@ -86,7 +92,9 @@
       </div>
     </div>
   </header>
-  <header class="lg:mx-52 mx-5 py-2 bg-white">
+
+  <!-- large screen  -->
+  <header class="lg:mx-52 mx-2 py-2 bg-white">
     <div class="hidden lg:flex justify-between">
       <a class="uppercase text-yellow-600 lg:text-sm text-[0.65rem] font-medium flex gap-x-2 h-5"
         href="https://cu.ac.bd/">
@@ -98,10 +106,10 @@
 
       </div>
     </div>
-    <div class="flex my-5 rounded-2xl items-center  h-24 bg-red-500">
-      <img src="./images/bnte-logo.jpeg" class="w-24 h-24" alt="">
+    <div class="flex my-5 lg:rounded-2xl rounded-md items-center  lg:h-24 bg-red-500">
+      <img src="./images/bnte-logo.jpeg" class="lg:w-24 lg:h-24 w-16 h-16" alt="">
 
-      <a class="block lg:text-4xl text-2xl font-serif  text-white bg-red-500 font-light px-4 py-2 ms-2 "
+      <a class="block lg:text-4xl text-base font-serif  text-white bg-red-500 font-light lg:px-4 py-2 ms-2 "
         href="/">Bio-Nanomaterials and Tissue Engineering Laboratory (BNTELab)</a>
     </div>
     <nav class="hidden lg:block space-x-10">
@@ -186,7 +194,7 @@
       </div>
     </section>
     <!-- Article -->
-    <article class="md:mx-52 mx-10 grid lg:grid-cols-5 grid-cols-1 lg:gap-32 gap-10">
+    <article class="md:mx-52 mx-5 grid lg:grid-cols-5 grid-cols-1 lg:gap-32 gap-10">
       <p class="lg:col-span-3 lg:text-lg">
         BNTELab, led by <a href="https://scholar.google.com/citations?user=ifAdIwEAAAAJ&hl=en" target="_blank"
           rel="noopener noreferrer" class="hover:underline text-yellow-600">Dr. Kamol Dey</a> , designs and develops
@@ -222,7 +230,7 @@
           <a class="underline text-yellow-600 font-medium"
             href="https://scholar.google.com/citations?user=ifAdIwEAAAAJ&hl=en">Full List of Publications</a>
         </div>
-        <div class="border border-gray-300 rounded-xl h-96">
+        <div class="border border-gray-300 rounded-xl h-96 hidden lg:block">
           <button class="w-full border-b border-gray-300 p-3 font-bold text-start text-xl text-gray-700">
             <a href="http://">@BNTElab</a>
           </button>
@@ -235,7 +243,7 @@
       </section>
     </article>
     <!-- Youtube Video -->
-    <section class="lg:mx-52 mx-5 flex justify-center">
+    <section class="lg:mx-52 mx-5 my-15 lg:my-0 lg:flex justify-center">
       <iframe class="hidden lg:block" width="1103" height="550"
         src="https://www.youtube.com/embed/7Q3S6q97FiU?si=1t4w99HtRNPpCpgJ">
       </iframe>
@@ -246,10 +254,10 @@
     <!-- Icon Section -->
     <section class="lg:mx-52 mx-10 flex lg:flex-row flex-col items-center lg:items-start lg:justify-center gap-5">
       <div
-        class=" flex flex-col items-center justify-center text-center border-transparent p-4 border-2 border-yellow-600 rounded-2xl transition-all duration-700 bg-yellow-50 hover:scale-125 hover:rotate-45 hover:hue-rotate-30">
+        class=" flex flex-col items-center justify-center text-center border-transparent p-4 border-2 border-yellow-600 rounded-2xl transition-all duration-700 bg-yellow-50 lg:hover:scale-125 lg:hover:rotate-45 hover:hue-rotate-30">
         <p class="text-[3rem] lg:text-[4.75rem] text-neutral-500">
           <!-- <i class="fa-solid fa-binoculars"></i> -->
-          <img src="./images/bnte-logo.jpeg" class="w-36 h-36" alt="">
+          <img src="./images/bnte-logo.jpeg" class="lg:w-36 lg:h-36 w-24 h-24" alt="">
         </p>
       </div>
     </section>
@@ -282,6 +290,19 @@
               University of Chittagong, <br>
               Chittagong-4331, Bangladesh</span></a>
         </div>
+
+        <div class="border border-gray-900 rounded-xl h-96 lg:hidden block overflow-x-scroll ">
+          <button class="w-full border-b border-gray-300 p-3 font-bold text-start text-xl text-gray-700">
+            <a href="http://">@BNTElab</a>
+          </button>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3686.9084802872417!2d91.77926777394357!3d22.470073236722897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x30acd6e3024dbf1d%3A0xcf876f290916359!2sDepartment%20of%20Applied%20Chemistry%20and%20Chemical%20Engineering%2C%20University%20of%20Chittagong%20Hathazari%2C%204331!3m2!1d22.470068299999998!2d91.7818427!5e0!3m2!1sen!2sbd!4v1697393786527!5m2!1sen!2sbd"
+            class="h-full w-full " allowfullscreen="no" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+
         <div class="flex flex-col lg:flex-row lg:items-start gap-2 ">
           <p class="text-2xl"><i class="fa-solid fa-envelope"></i></p>
           <a class="" href="">Contact Us
@@ -301,7 +322,7 @@
           <img src="./images/cu-logo-black.svg" class="w-6 h-6">
           <a class="text-white lg:text-2xl " href="https://cu.ac.bd/" target="_blank">University of Chittagong</a>
         </div>
-        <div class="space-x-3 flex flex-wrap">
+        <div class="lg:space-x-3 flex flex-wrap text-center my-2">
           <span class=" text-white lg:text-sm text-[0.65rem]">©2023 Bio-Nanomaterials and Tissue Engineering Laboratory
             (BNTELab)</span>
         </div>

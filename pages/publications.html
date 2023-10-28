@@ -14,18 +14,26 @@
 
 <body>
   <!-- Responsive Header -->
-  <header class="lg:hidden block p-5 flex justify-between items-center bg-sky-900 text-white">
+  <header class="lg:hidden block p-5 flex justify-between items-center bg-yellow-700 text-white">
     <button
       class="text-white text-lg bg-white-700 hover:bg-white-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg text-sm dark:bg-white-600 dark:hover:bg-white-700 focus:outline-none dark:focus:ring-white-800"
       type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
       aria-controls="drawer-navigation">
       <i class="fa-solid fa-bars"></i>
     </button>
-    <a class="uppercase lg:text-sm text-[0.85rem] font-medium font-serif" href="../index.html">UNIVERSITY of
-      CHITTAGONG</a>
-    <button class="">
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </button>
+    <a class="uppercase lg:text-sm text-[0.85rem] font-medium font-serif" href="https://cu.ac.bd/">
+      <div class="flex items-center gap-x-2">
+        <img src="./images/cu-logo-black.svg" alt="" class="h-5">
+        <span class="text-sm">UNIVERSITY of CHITTAGONG</span>
+      </div>
+
+      <div class="flex items-center gap-x-2">
+        <a href="https://acce.cu.ac.bd/"
+          class="uppercase  lg:text-sm text-[0.7rem] font-medium flex gap-x-2 h-5 ">ACCE</a>
+
+      </div>
+    </a>
+
 
     <!-- drawer component -->
     <div id="drawer-navigation"
@@ -40,6 +48,7 @@
       </button>
       <div class="py-4 overflow-y-auto">
         <ul class="space-y-2 font-medium">
+
           <li>
             <a href="../index.html"
               class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
@@ -76,19 +85,13 @@
               <span class="ml-3">Contact</span>
             </a>
           </li>
-          <!-- <li>
-              <a
-                href="./positions.html"
-                class="flex items-center p-2 text-gray-400 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span class="ml-3">Positions</span>
-              </a>
-            </li> -->
         </ul>
       </div>
     </div>
   </header>
-  <header class="lg:mx-52 mx-5 py-2 bg-white">
+
+  <!-- large screen  -->
+  <header class="lg:mx-52 mx-2 py-2 bg-white">
     <div class="hidden lg:flex justify-between">
       <a class="uppercase text-yellow-600 lg:text-sm text-[0.65rem] font-medium flex gap-x-2 h-5"
         href="https://cu.ac.bd/">
@@ -100,10 +103,10 @@
 
       </div>
     </div>
-    <div class="flex my-5 rounded-2xl items-center  h-24 bg-red-500">
-      <img src="./../images/bnte-logo.jpeg" class="w-24 h-24" alt="">
+    <div class="flex my-5 lg:rounded-2xl rounded-md items-center  lg:h-24 bg-red-500">
+      <img src="../images/bnte-logo.jpeg" class="lg:w-24 lg:h-24 w-16 h-16" alt="">
 
-      <a class="block lg:text-4xl text-2xl font-serif  text-white bg-red-500 font-light px-4 py-2 ms-2 "
+      <a class="block lg:text-4xl text-base font-serif  text-white bg-red-500 font-light lg:px-4 py-2 ms-2 "
         href="/">Bio-Nanomaterials and Tissue Engineering Laboratory (BNTELab)</a>
     </div>
     <nav class="hidden lg:block space-x-10">
@@ -120,7 +123,7 @@
       Research
     </h1>
     <div class="grid grid-cols-2 lg:col-span-3 text-white text-xl gap-8 py-2 lg:px-3">
-      <button class="rounded-lg bg-sky-800 lg:p-4 lg:text-lg text-sm p-3 text-center">
+      <button class="rounded-lg bg-yellow-800 lg:p-4 lg:text-lg text-sm p-3 text-center">
         <a target="_blank"
           href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=ifAdIwEAAAAJ&sortby=pubdate">Google
           Scholar Publications</a>
