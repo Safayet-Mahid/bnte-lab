@@ -200,10 +200,53 @@
           <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">Ex MS Student</span> <br>
             Muhammad Mehedi Hasan</p>
         </figcaption>
-        <div class="fixed top-10 bg-red-900 -z-10 hidden group-hover:block hover:z-20 w-full  rounded-lg">
-          hello lorem
-        </div>
+
       </figure>
+    </section>
+
+    <!-- modal test section  -->
+    <section>
+      <!-- people 1 -->
+      <div class="rounded-lg w-fit relative">
+        <!-- main content  starts-->
+        <div class="w-48">
+          <!-- <img src="../images//safayet.jpeg" class="w-full h-full" alt="">
+          <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">Ex MS Student</span> <br>
+            Muhammad Mehedi Hasan</p> -->
+          <figure
+            class="group  relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 ">
+            <a href="#">
+              <img class="rounded-lg h-full w-full" src="../images/mehedi.jpeg" alt="image description">
+            </a>
+            <figcaption class="absolute p-4 text-center bottom-0 w-full bg-black/25">
+              <p class="text-gray-100 lg:text-xl"><span class="lg:text-sm text-xs font-medium">Ex MS Student</span > <br>
+                Muhammad Mehedi Hasan</p>
+                <button
+                  class=" hidden  group-hover:block  group-hover:visible see-more b border-2 bg-gray-100 px-2 py-1 outline-none mx-auto rounded-lg text-xs mt-3"
+                  onclick="seemoreFunc(1)">See More</button>
+            </figcaption>
+
+          </figure>
+        </div>
+        <!-- main content ends -->
+        <!-- modal starts -->
+        <div class="fixed inset-0 flex justify-center items-center z-50 modal invisible backdrop-blur-md ">
+          <div class="relative  w-fit h-fit bg-yellow-600 p-10 rounded-3xl">
+            <h2>I am a research enthusiast</h2>
+            <p>my research work is given below</p>
+            <button class="close-btn absolute right-5 top-2" onclick="closeFunc(1)"><i
+                class="fa-solid fa-xmark text-2xl font-bold"></i></button>
+            <ul>
+              <li>research 1</li>
+              <li>research 2</li>
+              <li>research 3</li>
+              <li>research 4</li>
+            </ul>
+          </div>
+        </div>
+        <!-- modal ends  -->
+      </div>
+  
     </section>
   </main>
   <!-- Affliations -->
@@ -261,6 +304,7 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <script src="../js/people.js"></script>
 </body>
 
 </html>
