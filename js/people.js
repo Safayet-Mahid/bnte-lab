@@ -1,21 +1,24 @@
 const closeBtn = document.querySelectorAll(".close-btn")
 const seeMore = document.querySelectorAll(".see-more")
-const modal = document.querySelectorAll(".modal")
+const modals = document.querySelectorAll(".modal")
 
-const seemoreFunc = (i) => {
-    modal.forEach((sm, index) => {
-        if (i === index + 1) {
-            sm.classList.remove("invisible")
-            sm.classList.add("visible")
-        }
-    })
+let modal = function (modalClick) {
+    modals[modalClick].classList.add('visible')
+    modals[modalClick].classList.remove('invisible')
 }
 
-const closeFunc = (i) => {
-    modal.forEach((sm, index) => {
-        if (i === index + 1) {
-            sm.classList.remove("visible")
-            sm.classList.add("invisible")
-        }
+seeMore.forEach((mb, i) => {
+    mb.addEventListener("click", () => {
+        console.log("first")
+        modal(i)
     })
-}
+})
+closeBtn.forEach((mc) => {
+    mc.addEventListener("click", () => {
+        modals.forEach((mv) => {
+            mv.classList.remove("visible")
+            mv.classList.add("invisible")
+        })
+    })
+
+})
