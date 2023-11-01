@@ -9,7 +9,6 @@ let modal = function (modalClick) {
 
 seeMore.forEach((mb, i) => {
     mb.addEventListener("click", () => {
-        console.log("first")
         modal(i)
     })
 })
